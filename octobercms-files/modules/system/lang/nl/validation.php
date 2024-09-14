@@ -1,2 +1,184 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    'accepted' => ':attribute moet geaccepteerd zijn.',
+    'accepted_if' => ':attribute moet geaccepteerd zijn als :other de waarde :value heeft.',
+    'active_url' => ':attribute is geen geldige URL.',
+    'after' => ':attribute moet een datum na :date zijn.',
+    'after_or_equal' => ':attribute moet een datum na of gelijk aan :date zijn.',
+    'alpha' => ':attribute mag alleen letters bevatten.',
+    'alpha_dash' => ':attribute mag alleen letters, nummers, underscores (_) en streepjes (-) bevatten.',
+    'alpha_num' => ':attribute mag alleen letters en nummers bevatten.',
+    'array' => ':attribute moet geselecteerde elementen bevatten.',
+    'ascii' => ':attribute mag alleen alfanumerieke karakters en symbolen bevatten.',
+    'before' => ':attribute moet een datum voor :date zijn.',
+    'before_or_equal' => ':attribute moet een datum voor of gelijk aan :date zijn.',
+    'between' => [
+        'numeric' => ':attribute moet tussen :min en :max zijn.',
+        'file' => ':attribute moet tussen :min en :max kilobytes zijn.',
+        'string' => ':attribute moet tussen :min en :max karakters zijn.',
+        'array' => ':attribute moet tussen :min en :max items bevatten.',
+    ],
+    'boolean' => ':attribute moet ja of nee zijn.',
+    'confirmed' => ':attribute bevestiging komt niet overeen.',
+    'current_password' => 'Het wachtwoord is onjuist.',
+    'date' => ':attribute moet een datum bevatten.',
+    'date_equals' => ':attribute moet een datum zijn gelijk aan :date.',
+    'date_format' => ':attribute moet een geldig datum formaat bevatten.',
+    'decimal' => ':attribute moet :decimal decimalen bevatten.',
+    'declined' => ':attribute moet zijn afgewezen.',
+    'declined_if' => ':attribute moet afgewezen zijn als :other de waarde :value heeft.',
+    'different' => ':attribute en :other moeten verschillend zijn.',
+    'digits' => ':attribute moet bestaan uit :digits cijfers.',
+    'digits_between' => ':attribute moet bestaan uit minimaal :min en maximaal :max cijfers.',
+    'dimensions' => ':attribute heeft geen geldige afmetingen voor afbeeldingen.',
+    'distinct' => ':attribute heeft een dubbele waarde.',
+    'doesnt_end_with' => ':attribute mag niet eindigen met: :values.',
+    'doesnt_start_with' => ':attribute mag niet starten met: :values.',
+    'email' => ':attribute is geen geldig e-mailadres.',
+    'ends_with' => ':attribute moet eindigen op een van de volgende waarden: :values.',
+    'enum' => ':attribute is ongeldig.',
+    'exists' => ':attribute bestaat niet.',
+    'file' => ':attribute moet een bestand zijn.',
+    'filled' => ':attribute is verplicht.',
+    'gt' => [
+        'numeric' => ':attribute moet groter zijn dan :value.',
+        'file' => ':attribute moet groter zijn dan :value kilobyte.',
+        'string' => ':attribute moet langer zijn dan :value karakters.',
+        'array' => ':attribute moet meer dan :value items bevatten.',
+    ],
+    'gte' => [
+        'numeric' => ':attribute moet groter of gelijk zijn aan :value.',
+        'file' => ':attribute moet minstens :value kilobyte groot zijn.',
+        'string' => ':attribute moet minstens :value karakters lang zijn.',
+        'array' => ':attribute moet minstens :value items bevatten.',
+    ],
+    'image' => ':attribute moet een afbeelding zijn.',
+    'in' => ':attribute is ongeldig.',
+    'in_array' => ':attribute bestaat niet in :other.',
+    'integer' => ':attribute moet een getal zijn.',
+    'ip' => ':attribute moet een geldig IP-adres zijn.',
+    'ipv4' => ':attribute moet een geldig IPv4-adres zijn.',
+    'ipv6' => ':attribute moet een geldig IPv6-adres zijn.',
+    'json' => ':attribute moet een geldige JSON-string zijn.',
+    'lowercase' => ':attribute mag alleen kleine letters bevatten.',
+    'lt' => [
+        'array' => ':attribute moet minder dan :value items bevatten.',
+        'file' => ':attribute moet kleiner zijn dan :value kilobyte.',
+        'numeric' => ':attribute moet kleiner zijn dan :value.',
+        'string' => ':attribute moet korter zijn dan :value karakters.',
+    ],
+    'lte' => [
+        'array' => ':attribute mag hoogstens :value items bevatten.',
+        'file' => ':attribute mag hoogstens :value kilobyte groot zijn.',
+        'numeric' => ':attribute moet kleiner of gelijk zijn aan :value.',
+        'string' => ':attribute mag hoogstens :value karakters lang zijn.',
+    ],
+    'mac_address' => ':attribute is geen geldig MAC-adres.',
+    'max' => [
+        'array' => ':attribute mag niet meer dan :max items bevatten.',
+        'file' => ':attribute mag niet meer dan :max kilobytes zijn.',
+        'numeric' => ':attribute mag niet hoger dan :max zijn.',
+        'string' => ':attribute mag niet uit meer dan :max karakters bestaan.',
+    ],
+    'max_digits' => ':attribute mag niet meer dan :max cijfers bevatten.',
+    'mimes' => ':attribute moet een bestand zijn van het bestandstype :values.',
+    'mimetypes' => ':attribute moet een bestand zijn van het bestandstype :values.',
+    'min' => [
+        'array' => ':attribute moet minimaal :min items bevatten.',
+        'file' => ':attribute moet minimaal :min kilobytes zijn.',
+        'numeric' => ':attribute moet minimaal :min zijn.',
+        'string' => ':attribute moet minimaal :min karakters zijn.',
+    ],
+    'min_digits' => ':attribute moet minstens :min cijfers bevatten.',
+    'missing' => ':attribute mag niet aanwezig zijn.',
+    'missing_if' => ':attribute mag niet aanwezig zijn als :other de waarde :value heeft.',
+    'missing_unless' => ':attribute mag niet aanwezige zijn tenzij :other de waarde :value heeft.',
+    'missing_with' => ':attribute mag niet aanwezig zijn als waarde :values aanwezig is.',
+    'missing_with_all' => ':attribute mag niet aanwezig zijn als waarden :values aanwezig zijn.',
+    'multiple_of' => ':attribute moet een meervoud zijn van :value.',
+    'not_in' => 'De gekozen waarde van :attribute is ongeldig.',
+    'not_regex' => 'Het formaat van :attribute is ongeldig.',
+    'numeric' => ':attribute moet een nummer zijn.',
+    'password' => [
+        'letters' => ':attribute moet tenminste één letter bevatten.',
+        'mixed' => ':attribute moet tenminste één hoofdletter en één kleine letter bevatten.',
+        'numbers' => ':attribute moet tenminste één cijfer bevatten.',
+        'symbols' => ':attribute moet tenminste één symbool bevatten.',
+        'uncompromised' => ':attribute is voorgekomen in een datalek. Kies een ander :attribute.',
+    ],
+    'present' => ':attribute moet bestaan.',
+    'prohibited' => ':attribute is niet toegestaan.',
+    'prohibited_if' => ':attribute is niet toegestaan als :other de waarde :value heeft.',
+    'prohibited_unless' => ':attribute is niet toegestaan tenzij :other de waarden :values bevat.',
+    'prohibits' => ':attribute staat niet toe dat :other aanwezig is.',
+    'regex' => ':attribute formaat is ongeldig.',
+    'required' => ':attribute is verplicht.',
+    'required_array_keys' => ':attribute moet waarden bevatten uit: :values.',
+    'required_if' => ':attribute is verplicht indien :other gelijk is aan :value.',
+    'required_if_accepted' => ':attribute is verplicht als :other is geaccepteerd.',
+    'required_unless' => ':attribute is verplicht tenzij :other gelijk is aan :values.',
+    'required_with' => ':attribute is verplicht i.c.m. :values',
+    'required_with_all' => ':attribute is verplicht i.c.m. :values',
+    'required_without' => ':attribute is verplicht als :values niet ingevuld is.',
+    'required_without_all' => ':attribute is verplicht als :values niet ingevuld zijn.',
+    'same' => ':attribute en :other moeten overeenkomen.',
+    'size' => [
+        'array' => ':attribute moet :size items bevatten.',
+        'file' => ':attribute moet :size kilobyte zijn.',
+        'numeric' => ':attribute moet :size zijn.',
+        'string' => ':attribute moet :size karakters zijn.',
+    ],
+    'starts_with' => ':attribute moet beginnen met een van de volgende waarden: :values.',
+    'string' => ':attribute moet een tekenreeks zijn.',
+    'timezone' => ':attribute moet een geldige tijdzone zijn.',
+    'unique' => ':attribute is al in gebruik.',
+    'uploaded' => 'Het uploaden van :attribute is mislukt.',
+    'uppercase' => ':attribute mag enkel hoofdletters bevatten.',
+    'url' => ':attribute is geen geldige URL.',
+    'ulid' => ':attribute moet een geldig ULID zijn.',
+    'uuid' => ':attribute moet een geldig UUID zijn.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

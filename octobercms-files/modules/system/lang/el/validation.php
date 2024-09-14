@@ -1,2 +1,99 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+/* Greek Language Updated on 2015-07-06 v1.01 */
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | such as the size rules. Feel free to tweak each of these messages.
+    |
+    */
+
+    "accepted"         => "Το :attribute πρέπει να γίνει αποδεκτό.",
+    "active_url"       => "Το :attribute δεν είναι ένα έγκυρο URL.",
+    "after"            => "Η :attribute πρέπει να είναι μια ημερομηνία μετρά την :date.",
+    "alpha"            => "Το :attribute πρέπει να περιέχει μόνο γράμματα.",
+    "alpha_dash"       => "Το :attribute πρέπει να περιέχει μόνο γράμματα, νούμερα, και παύλες.",
+    "alpha_num"        => "Το :attribute πρέπει να περιέχει μόνο γράμματα και νούμερα.",
+    "array"            => "Το :attribute πρέπει να είναι ένας πίνακας.",
+    "before"           => "Η :attribute πρέπει να είναι μια ημερομηνία πριν την :date.",
+    "between"          => [
+        "numeric" => "Το :attribute πρέπει να είναι μεταξύ :min - :max.",
+        "file"    => "Το :attribute πρέπει να είναι μεταξύ :min - :max kilobytes.",
+        "string"  => "Το :attribute πρέπει να είναι μεταξύ :min - :max χαρακτήρες.",
+        "array"   => "Ο :attribute πρέπει να εχει μεταξύ :min - :max αντικείμενα.",
+    ],
+    "confirmed"        => "Η επαλήθευση του :attribute δεν ταυτίζεται.",
+    "date"             => "Η :attribute δεν είναι μια έγκυρη ημερομηνία.",
+    "date_format"      => "Η :attribute δεν ταυτίζεται με την μορφοποίηση :format",
+    "different"        => "Το :attribute και το :other πρέπει να είναι διαφορετικά.",
+    "digits"           => "Το :attribute πρέπει να είναι :digits ψηφία.",
+    "digits_between"   => "Το :attribute πρέπει να είναι μεταξύ :min και :max ψηφία.",
+    "email"            => "Η μορφή του :attribute είναι μη έγκυρη.",
+    "exists"           => "Η επιλεγμένη :attribute είναι μη έγκυρη.",
+    "image"            => "Η :attribute πρέπει να είναι εικόνα.",
+    "in"               => "Η επιλεγμένη :attribute είναι μη έγκυρη.",
+    "integer"          => "Ο :attribute πρέπει να είναι ένας ακέραιος αριθμός.",
+    "ip"               => "Η :attribute πρέπει να είναι μια έγκυρη IP διεύθυνση.",
+    "max"              => [
+        "numeric" => "Το :attribute δεν πρέπει να είναι μεγαλύτερο από :max.",
+        "file"    => "Το :attribute δεν πρέπει να είναι μεγαλύτερο από :max kilobytes.",
+        "string"  => "Το :attribute δεν πρέπει να είναι μεγαλύτερο από :max χαρακτήρες.",
+        "array"   => "Το :attribute δεν πρέπει να είναι έχει περισσότερα από :max αντικείμενα.",
+    ],
+    "mimes"            => "Το :attribute πρέπει να είναι ένα αρχείο με τύπο: :values.",
+    "extensions"       => "Το :attribute πρέπει να έχει μια επέκταση από: :values.",
+    "min"              => [
+        "numeric" => "Το :attribute πρέπει να είναι το λιγότερο :min.",
+        "file"    => "Το :attribute πρέπει να είναι το λιγότερο :min kilobytes.",
+        "string"  => "Το :attribute πρέπει να είναι το λιγότερο :min χαρακτήρες.",
+        "array"   => "Το :attribute πρέπει να έχει το λιγότερο :min αντικείμενα.",
+    ],
+    "not_in"           => "Το επιλεγμένο :attribute είναι μη έγκυρο.",
+    "numeric"          => "Το :attribute πρέπει να είναι ένας αριθμός.",
+    "regex"            => "Η μορφοποίηση του :attribute είναι μη έγκυρη.",
+    "required"         => "Το πεδίο :attribute απαιτείται.",
+    "required_if"      => "Το πεδίο :attribute απαιτείται όταν το :other είναι :value.",
+    "required_with"    => "Το πεδίο :attribute απαιτείται όταν οι :values είναι δηλωμένες.",
+    "required_without" => "Το πεδίο :attribute απαιτείται όταν οι :values δεν είναι δηλωμένες. ",
+    "same"             => "Το :attribute και το :other δεν ταυτίζονται.",
+    "size"             => [
+        "numeric" => "Το :attribute πρέπει να είναι :size.",
+        "file"    => "Το :attribute πρέπει να είναι :size kilobytes.",
+        "string"  => "Το :attribute πρέπει να είναι :size χαρακτήρες.",
+        "array"   => "Το :attribute πρέπει να είναι :size αντικείμενα.",
+    ],
+    "unique"           => "Η :attribute έχει ήδη χρησιμοποιηθεί.",
+    "url"              => "Η :attribute είναι μη έγκυρη.",
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

@@ -1,2 +1,150 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    "accepted"         => ":attribute 必须被接受。",
+    "active_url"       => ":attribute 不是一个有效的URL。",
+    "after"            => ":attribute 必须是 :date 之后的一个日期。",
+    'after_or_equal'       => ':attribute 必须是等于 :date 或之后的一个日期。',
+    "alpha"            => ":attribute 只能包含字母。",
+    "alpha_dash"       => ":attribute 只能包含字母, 数字和-。",
+    "alpha_num"        => ":attribute 只能包含字母和数字。",
+    "array"            => ":attribute 只能是一个数组。",
+    "before"           => ":attribute 必须是 :date 之前的一个日期。",
+    'before_or_equal'      => ':attribute 必须是等于 :date 或之前的一个日期。',
+    "between"          => [
+        "numeric" => ":attribute 在 :min - :max 之间。",
+        "file"    => ":attribute 在 :min - :max kilobytes之间。",
+        "string"  => ":attribute 在 :min - :max 字符之间。",
+        "array"   => ":attribute 在 :min - :max 个之间。",
+    ],
+    'boolean'              => ':attribute 字段必须为布尔型。',
+    "confirmed"        => ":attribute 的确认不满足。",
+    "date"             => ":attribute 不是一个合法的日期。",
+    'date_equals'          => ':attribute 必须是等于 :date 的日期。',
+    "date_format"      => ":attribute 不符合 :format 格式。",
+    "different"        => ":attribute 和 :other 必须不同。",
+    "digits"           => ":attribute 必须是 :digits。",
+    "digits_between"   => ":attribute 必须在 :min :max 之间。",
+    'dimensions'           => ':attribute 的图片尺寸无效。',
+    'distinct'             => ':attribute 字段有重复值。',
+    "email"            => ":attribute 格式无效。",
+    'ends_with'            => ':attribute 必须以下列之一结束: :values。',
+    "exists"           => "选中的 :attribute 无效。",
+    'file' => ':attribute 必须是一个文件。',
+    'fill' => ':attribute 字段必须有值。',
+    'gt'                   => [
+        'numeric' => ':attribute 必须大于 :value。',
+        'file' => ':attribute 必须大于 :value 千字节。',
+        'string' => ':attribute 必须大于 :value 字符。',
+        'array' => ':attribute 必须大于:value 个。',
+    ],
+    'gte'                  => [
+        'numeric' => ':attribute 必须大于或等于:value。',
+        'file' => ':attribute 必须大于或等于 :value 千字节。',
+        'string' => ':attribute 必须大于或等于:value 字符。',
+        'array' => ':attribute 必须有 :value 个或更多。',
+    ],
+    "image"            => ":attribute 必须是图片。",
+    "in"               => "选中的 :attribute 无效。",
+    'in_array' => ':other 中不存在 :attribute 字段。',
+    "integer"          => ":attribute 必须是数字。",
+    "ip"               => ":attribute 必须是一个有效的IP地址。",
+    'ipv4' => ':attribute 必须是一个有效的 IPv4 地址。',
+    'ipv6' => ':attribute 必须是一个有效的 IPv6 地址。',
+    'json' => ':attribute 必须是一个有效的 JSON 字符串。',
+    'lt'                   => [
+        'numeric' => ':attribute 必须小于:value。',
+        'file' => ':attribute 必须小于 :value 千字节。',
+        'string' => ':attribute 必须小于 :value 字符。',
+        'array' => ':attribute 必须小于 :value 个。',
+    ],
+    'lte'                  => [
+        'numeric' => ':attribute 必须小于或等于:value。',
+         'file' => ':attribute 必须小于或等于 :value 千字节。',
+         'string' => ':attribute 必须小于或等于:value 字符。',
+         'array' => ':attribute 不能超过 :value 个。',
+    ],
+    "max"              => [
+        "numeric" => ":attribute 不能大于 :max。",
+        "file"    => ":attribute 不能大于 :max kilobytes。",
+        "string"  => ":attribute 不能超过 :max 字符。",
+        "array"   => ":attribute 不能超过 :max 个。",
+    ],
+    "mimes"            => ":attribute 必须是一个: :values 类型的文件。",
+    'mimetypes'            => ':attribute 必须是一个类型为 :values 的文件。',
+    "min"              => [
+        "numeric" => ":attribute 必须至少 :min。",
+        "file"    => ":attribute 必须至少 :min kilobytes。",
+        "string"  => ":attribute 必须至少 :min 字符。",
+        "array"   => ":attribute 必须至少 :min 个。",
+    ],
+    "not_in"           => "选中的 :attribute 无效。",
+    'not_regex'            => ':attribute 格式无效。',
+    "numeric"          => ":attribute 必须是一个数字。",
+    'present'              => '必须存在 :attribute 字段。',
+    "regex"            => ":attribute 格式无效。",
+    "required"         => "需要 :attribute 字段。",
+    "required_if"      => "需要 :attribute 字段, 当 :other 是 :value。",
+    'required_unless'      => 'attribute 字段是必需的，除非 :other 在 :values 中。',
+    "required_with"    => "需要 :attribute 字段, 当 :values 是当前值。",
+    'required_with_all'    => '当 :values 存在时， :attribute 字段是必需的。',
+    "required_without" => "需要 :attribute 字段, 当 :values 不是当前值。",
+    'required_without_all' => '当 :values 都不存在时， :attribute 字段是必需的。',
+    "same"             => ":attribute 和 :other 必须匹配。",
+    "size"             => [
+        "numeric" => ":attribute 必须是 :size。",
+        "file"    => ":attribute 必须是 :size kilobytes。",
+        "string"  => ":attribute 必须是 :size 字符。",
+        "array"   => ":attribute 必须是 :size 个。",
+    ],
+    'starts_with'          => ':attribute 必须是以下之一开始: :values。',
+    'string'               => ':attribute 必须是字符串。',
+    'timezone'             => ':attribute 必须是一个有效的区域。',
+    "unique"           => ":attribute 已占用。",
+    'uploaded'             => ':attribute 上传失败。',
+    "url"              => ":attribute 格式无效。",
+    'uuid'                 => ':attribute 必须是有效的 UUID。',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

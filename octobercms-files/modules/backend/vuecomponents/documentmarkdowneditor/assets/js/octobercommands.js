@@ -53,7 +53,11 @@ oc.Modules.register('backend.vuecomponents.documentmarkdowneditor.octobercommand
 
         uploadMedia(callback, accept) {
             const uploaderUtils = oc.Modules.import('backend.vuecomponents.uploader.utils');
-            uploaderUtils.selectAndUploadMediaManagerFiles(callback, true, accept);
+            uploaderUtils.selectAndUploadMediaManagerFiles(
+                callback,
+                true,
+                accept
+            );
         }
 
         titleFromUrl(url) {
@@ -97,7 +101,7 @@ oc.Modules.register('backend.vuecomponents.documentmarkdowneditor.octobercommand
                 cropAndInsertButton: true,
                 onInsert: function(items) {
                     if (!items.length) {
-                        $.oc.alert($.oc.lang.get('mediamanager.invalid_image_empty_insert'));
+                        oc.alert($.oc.lang.get('mediamanager.invalid_image_empty_insert'));
                         return;
                     }
 
@@ -105,7 +109,7 @@ oc.Modules.register('backend.vuecomponents.documentmarkdowneditor.octobercommand
 
                     for (let i = 0, len = items.length; i < len; i++) {
                         if (items[i].documentType !== 'image') {
-                            $.oc.alert(
+                            oc.alert(
                                 $.oc.lang.get(
                                     'mediamanager.invalid_image_invalid_insert',
                                     'The file "' + items[i].title + '" is not an image.'
@@ -165,7 +169,7 @@ oc.Modules.register('backend.vuecomponents.documentmarkdowneditor.octobercommand
                 alias: 'ocpagelookup',
                 onInsert: function(item) {
                     if (!item) {
-                        $.oc.alert($.oc.lang.get('mediamanager.invalid_file_empty_insert'));
+                        oc.alert($.oc.lang.get('mediamanager.invalid_file_empty_insert'));
                         return;
                     }
 
@@ -185,7 +189,7 @@ oc.Modules.register('backend.vuecomponents.documentmarkdowneditor.octobercommand
                 cropAndInsertButton: false,
                 onInsert: function(items) {
                     if (!items.length) {
-                        $.oc.alert($.oc.lang.get('mediamanager.invalid_file_empty_insert'));
+                        oc.alert($.oc.lang.get('mediamanager.invalid_file_empty_insert'));
                         return;
                     }
 

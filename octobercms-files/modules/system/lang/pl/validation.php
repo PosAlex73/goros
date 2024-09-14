@@ -1,2 +1,146 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | such as the size rules. Feel free to tweak each of these messages.
+    |
+    */
+
+    'accepted'             => ':attribute musi zostać zaakceptowany.',
+    'active_url'           => ':attribute jest nieprawidłowym adresem URL.',
+    'after'                => ':attribute musi być datą późniejszą od :date.',
+    'after_or_equal'       => ':attribute musi być datą późniejszą lub równą :date.',
+    'alpha'                => ':attribute może zawierać jedynie litery.',
+    'alpha_dash'           => ':attribute może zawierać jedynie litery, cyfry i myślniki.',
+    'alpha_num'            => ':attribute może zawierać jedynie litery i cyfry.',
+    'array'                => ':attribute musi być tablicą.',
+    'before'               => ':attribute musi być datą wcześniejszą od :date.',
+    'before_or_equal'      => ':attribute musi być datą wcześniejszą lub równą :date.',
+    'between'              => [
+        'numeric' => ':attribute musi zawierać się w granicach :min - :max.',
+        'file'    => ':attribute musi zawierać się w granicach :min - :max kilobajtów.',
+        'string'  => ':attribute musi zawierać się w granicach :min - :max znaków.',
+        'array'   => ':attribute musi składać się z :min - :max elementów.',
+    ],
+    'boolean'              => ':attribute musi mieć wartość prawda albo fałsz',
+    'confirmed'            => 'Potwierdzenie :attribute nie zgadza się.',
+    'date'                 => ':attribute nie jest prawidłową datą.',
+    'date_equals'          => ':attribute musi być datą równą :date.',
+    'date_format'          => ':attribute nie jest w formacie :format.',
+    'different'            => ':attribute oraz :other muszą się różnić.',
+    'digits'               => ':attribute musi składać się z :digits cyfr.',
+    'digits_between'       => ':attribute musi mieć od :min do :max cyfr.',
+    'dimensions'           => ':attribute ma nieprawidłowe wymiary obrazu.',
+    'distinct'             => ':attribute ma zduplikowaną wartość.',
+    'email'                => 'Format :attribute jest nieprawidłowy.',
+    'ends_with'            => ':attribute musi kończyć się jednym z następujących: :values.',
+    'exists'               => 'Zaznaczony :attribute jest nieprawidłowy.',
+    'file'                 => ':attribute musi być plikiem.',
+    'filled'               => 'Pole :attribute jest wymagane.',
+    'gt'                   => [
+        'numeric' => ':attribute musi być większe niż :value.',
+        'file'    => ':attribute musi być większe niż :value kilobajtów.',
+        'string'  => ':attribute musi mieć więcej niż :value znaków.',
+        'array'   => ':attribute musi mieć więcej niż :value elementów.',
+    ],
+    'gte'                  => [
+        'numeric' => ':attribute musi być większe lub równe :value.',
+        'file'    => ':attribute musi być większe lub równe :value kilobajtów.',
+        'string'  => ':attribute musi być dłuższe lub równe :value znaków.',
+        'array'   => ':attribute musi mieć przynajmniej :value elementów.',
+    ],
+    'image'                => ':attribute musi być obrazkiem.',
+    'in'                   => 'Zaznaczony :attribute jest nieprawidłowy.',
+    'in_array'             => ':attribute nie istnieje w :other.',
+    'integer'              => ':attribute musi być liczbą całkowitą.',
+    'ip'                   => ':attribute musi być prawidłowym adresem IP.',
+    'ipv4'                 => ':attribute musi być prawidłowym adresem IPv4.',
+    'ipv6'                 => ':attribute musi być prawidłowym adresem IPv6.',
+    'json'                 => ':attribute musi być prawidłowym ciągiem JSON.',
+    'lt'                   => [
+        'numeric' => ':attribute musi być mniejsze niż :value.',
+        'file'    => ':attribute musi być mniejsze niż :value kilobajtów.',
+        'string'  => ':attribute musi być krótsze niż :value znaków.',
+        'array'   => ':attribute musi mieć mniej niż :value items.',
+    ],
+    'lte'                  => [
+        'numeric' => ':attribute musi być mniejsze lub równe :value.',
+        'file'    => ':attribute musi być mniejsze lub równe :value kilobajtów.',
+        'string'  => ':attribute musi być krótsze lub równe :value znaków.',
+        'array'   => ':attribute nie może mieć więcej niż :value elementów.',
+    ],
+    'max'                  => [
+        'numeric' => ':attribute nie może być większy niż :max.',
+        'file'    => ':attribute nie może być większy niż :max kilobajtów.',
+        'string'  => ':attribute nie może być dłuższy niż :max znaków.',
+        'array'   => ':attribute nie może mieć więcej niż :max elementów.',
+    ],
+    'mimes'                => ':attribute musi być plikiem typu :values.',
+    'mimetypes'            => ':attribute musi być plikiem typu :values.',
+    'min'                  => [
+        'numeric' => ':attribute musi być nie mniejszy od :min.',
+        'file'    => ':attribute musi mieć przynajmniej :min kilobajtów.',
+        'string'  => ':attribute musi mieć przynajmniej :min znaków.',
+        'array'   => ':attribute musi mieć przynajmniej :min elementów.',
+    ],
+    'not_in'               => 'Zaznaczony :attribute jest nieprawidłowy.',
+    'not_regex'            => 'Format :attribute jest nieprawidłowy.',
+    'numeric'              => ':attribute musi być liczbą.',
+    'present'              => ':attribute musi być obecne.',
+    'regex'                => 'Format :attribute jest nieprawidłowy.',
+    'required'             => 'Pole :attribute jest wymagane.',
+    'required_if'          => 'Pole :attribute jest wymagane gdy :other jest :value.',
+    'required_unless'      => 'Pole :attribute jest wymagane, chyba że :other jest w :values.',
+    'required_with'        => 'Pole :attribute jest wymagane gdy :values jest obecny.',
+    'required_with_all'    => 'Pole :attribute jest wymagane gdy :values jest obecny.',
+    'required_without'     => 'Pole :attribute jest wymagane gdy :values nie jest obecny.',
+    'required_without_all' => 'Pole :attribute jest wymagane gdy żadne z :values nie są obecne.',
+    'same'                 => 'Pole :attribute i :other muszą się zgadzać.',
+    'size'                 => [
+        'numeric' => ':attribute musi mieć :size.',
+        'file'    => ':attribute musi mieć :size kilobajtów.',
+        'string'  => ':attribute musi mieć :size znaków.',
+        'array'   => ':attribute musi zawierać :size elementów.',
+    ],
+    'starts_with'          => ':attribute musi zaczynać się jednym z następujących: :values.',
+    'string'               => ':attribute musi być ciągiem znaków.',
+    'timezone'             => ':attribute musi być prawidłową strefą czasową.',
+    'unique'               => 'Taki :attribute już występuje.',
+    'uploaded'             => 'Nie udało się przesłać :attribute.',
+    'url'                  => 'Format :attribute jest nieprawidłowy.',
+    'uuid'                 => ':attribute musi być prawidłowym UUID.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

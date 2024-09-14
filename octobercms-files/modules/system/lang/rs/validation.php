@@ -1,2 +1,125 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    'accepted'             => 'Polje :attribute mora biti prihvaćeno.',
+    'active_url'           => 'Polje :attribute mora sadržati validan URL.',
+    'after'                => 'Polje :attribute mora sadržati datum koji je posle sledećeg: :date.',
+    'after_or_equal'       => 'Polje :attribute mora sadržati datum koji je posle sledećeg ili: :date.',
+    'alpha'                => 'Polje :attribute mora sadržati samo slova.',
+    'alpha_dash'           => 'Polje :attribute može sadržati samo slova, brojeve, i povlake',
+    'alpha_num'            => 'Polje :attribute može sadržati samo slova ili brojeve.',
+    'array'                => 'Polje :attribute mora sadržati niz.',
+    'before'               => 'Polje :attribute mora sadržati datum koji je pre sledećeg: :date.',
+    'before_or_equal'      => 'Polje :attribute mora sadržati datum koji je pre sledećeg ili: :date.',
+    'between'              => [
+        'numeric' => 'Polje :attribute mora sadržati broj između :min i :max.',
+        'file'    => 'Polje :attribute mora sadržati fajl veličine između :min i :max kilobajta.',
+        'string'  => 'Polje :attribute mora sadržati tekst dužine između :min i :max karaktera.',
+        'array'   => 'Polje :attribute mora imati između :min i :max elemenata.',
+    ],
+    'boolean'              => 'Polje :attribute mora imati vrednost tačno ili netačno.',
+    'confirmed'            => 'Potvrda :attribute nije u odgovarajućem formatu.',
+    'date'                 => 'Polje :attribute ne sadrži validan datum.',
+    'date_format'          => 'Polje :attribute ne sadrži datum u odgovarajućem formatu :format.',
+    'different'            => 'Polja :attribute i :other moraju imati različite vrednosti.',
+    'digits'               => 'Polje :attribute mora sadržati :digits cifre.',
+    'digits_between'       => 'Polje :attribute mora sadržati između :min i :max cifre.',
+    'dimensions'           => 'Polje :attribute ne sadrži validne dimenzije.',
+    'distinct'             => 'Polje :attribute sadrži vrednost koja je duplikat.',
+    'email'                => 'Polje :attribute mora sadržati validnu email adresu.',
+    'exists'               => 'Polje :attribute nema validnu vrednost.',
+    'file'                 => 'Polje :attribute mora sadržati fajl.',
+    'filled'               => 'Polje :attribute mora imati vrednost.',
+    'image'                => 'Polje :attribute mora sadržati sliku.',
+    'in'                   => 'Polje :attribute nema validnu vrednost.',
+    'in_array'             => 'Polje :attribute ne sadrži vrednost koja postoji u polju :other.',
+    'integer'              => 'Polje :attribute mora sadržati ceo broj.',
+    'ip'                   => 'Polje :attribute mora sadržati validnu IP adresu.',
+    'ipv4'                 => 'Polje :attribute mora sadržati validnu IPv4 adresu.',
+    'ipv6'                 => 'Polje :attribute mora sadržati validnu IPv6 adresu.',
+    'json'                 => 'Polje :attribute mora sadržati validan JSON objekat.',
+    'max'                  => [
+        'numeric' => 'Polje :attribute ne sme sadržati broj veći od :max.',
+        'file'    => 'Polje :attribute ne sme sadržati fajl veći od :max kilobajta.',
+        'string'  => 'Polje :attribute ne sme sadržati tekst duži od :max karaktera.',
+        'array'   => 'Polje :attribute ne sme imati više od :max elemenata.',
+    ],
+    'mimes'                => 'Polje :attribute mora sadržati fajl tipa: :values.',
+    'mimetypes'            => 'Polje :attribute mora sadržati fajl jednog od sledećih tipova: :values.',
+    'min'                  => [
+        'numeric' => 'Polje :attribute ne sme sadržati broj manji od :min.',
+        'file'    => 'Polje :attribute ne sme sadržati fajl manji od :min kilobajta.',
+        'string'  => 'Polje :attribute ne sme sadržati tekst manji od :min karaktera.',
+        'array'   => 'Polje :attribute ne sme imati manje od :min elemenata.',
+    ],
+    'not_in'               => 'Polje :attribute nema validnu vrednost.',
+    'numeric'              => 'Polje :attribute mora sadržati broj.',
+    'present'              => 'Polje :attribute mora biti prisutno.',
+    'regex'                => 'Format polja :attribute nije validan.',
+    'required'             => 'Polje :attribute je obavezno.',
+    'required_if'          => 'Polje :attribute je obavezno kada :other ima vrednost :value.',
+    'required_unless'      => 'Polje :attribute je obavezno kada vrednost polja :other nije deo :values.',
+    'required_with'        => 'Polje :attribute je obavezno kada su vrednosti :values prisutne.',
+    'required_with_all'    => 'Polje :attribute je obavezno kada su vrednosti :values prisutne.',
+    'required_without'     => 'Polje :attribute je obavezno kada vrednosti :values nisu prisutne.',
+    'required_without_all' => 'Polje :attribute je obavezno kada nijedna od vrednosti :values nije prisutna.',
+    'same'                 => 'Polja :attribute i :other moraju imati iste vrednosti.',
+    'size'                 => [
+        'numeric' => 'Polje :attribute mora sadržati broj :size.',
+        'file'    => 'Polje :attribute mora sadržati fajl od :size kilobajta.',
+        'string'  => 'Polje :attribute mora sadržati tekst od :size karaktera.',
+        'array'   => 'Polje :attribute mora imati :size elemenata.',
+    ],
+    'string'               => 'Polje :attribute mora sadržati tekst.',
+    'timezone'             => 'Polje :attribute mora sadržati validnu vremensku zonu.',
+    'unique'               => 'Polje :attribute mora biti jedinstveno.',
+    'uploaded'             => 'Otpremanje fajla iz polja :attribute je neuspešno.',
+    'url'                  => 'Format polja :attribute nije validan.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'uobičajena-poruka',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [
+        'name' => 'ime',
+        'password' => 'lozinka',
+        'user' => 'korisnik',
+    ],
+
+];

@@ -1,2 +1,86 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('8C2F18EFC7C5058DAAQAAAAXAAAABHAAAACABAAAAAAAAAD/61kg8tNxGafxAqgAW2KSrpM31EV/lpjtBV/DpsVLwoFOQoEWNqbPkZao6ZCs7KYcH2XjJW9YCopNeyOiZ7pXfMBySpnZulag9cOdd0bWtJ3YkdGYo85V85Lh+2VPupAnefFHDAYzyGvMmUAhcWAjOlEAAABQBgAARupuJCh2FW9RuKYrShwzXst6yESmBckwiZQbmuXNpYw71+fZZ+JZUb1nVGj44JdWfkpMEVuYISNgTBQkwWzso62kbTwL0vmLPtNS24ccOzAQPBqEROK6kMKVCxZPC6/8HTa4AYkFM7aP7oUfjLgsT6XRdGEixIl/PdvSRYFlo/JwHFIMVtK4cs8cZItFjnCD8emZTTYgKAeRgGHQSORGYKeYkDzwp/2AJo7PikD5LRKGjo63ES7Drx8dxoEzknvsJxFwBLm6BZ7zwKb53D3bTOyLwmxIVhpMyXo39bgAD3IwqR0BiAXUVTTV88PH5z55JJMnttWggSLtI+cnopO7SxpEGfxF+CDt6IonW4oKgLtA4diguNdMffX45eVSbep+SqSfjBECkCmYIKPXFtSLAfHh4F6rIo28p7cNd0I+koao93h5wgMGzNgKvFUCrxb48iwI+8tWRe90aB5Z75a+6cPhUWXU0wapWFtvLt+7QcOaSOYbJxhJRaydp3d1YaQ6w53LhWxttSteBjZiuF4bsIvrDMFHkkfqqc1ZqE0M6gd64gIUvRlUAPIv8giSZMmI+vzB03RtFVtYUjLXiuQ6VH8kx1O6tVjegnpeP7mKbsyk1nJaNtpW9erVcd1UoEL6o/S+ao3Lqouqd+fy32zhez37PA2dMVKv3tiR5gvTlO2teednmC+hjUrcV0mIgQEprLG0qziGP6SBp3VIA9BseLRr6al2hCU7JnZjpiu1bHIOfZK4j+tL2Z+ZZb9BUwskt94udV/bjde0QCxOMo5bVQLqefp22Q7qhdotAIOedclZOWiA/F6yAnGOCS424g7uMYYhqt9ADTnI4Bivz8GKYpPOERuRWDkHci+E0pbjtfWurGh5pF1CFiKlDSf2WmmGBkChOm97V2PePY7X/Wjcylp8MXGTy4IN7mx2j4yXQydajwL+g9XqXaCdlb575HuysWtP6qjn7ubWJ4X1lRWFoxkbPXleipWGKTIW6a1zkg/27YDTRBr+bDDW5T2VuhqDbFpuMQte9jXpfQw+AcKTCKPoW8NJQ7IhSuIu6gYG1Hnkte/FFuwFVbGRKGcr04+NhEixREujdjFG35OLetYr3CvKd44kD05onxHaP7Y7Pg3D9Pcgp+Qx5No9SnyqRRkvAGVmxvPROpCUKJE/k6mufG83oAluiwfH0Ega4q9fFMwcNqvkOPSDlQm9WQy38Hv2GqZMEd+Y5lv2EC6SwdL9lvAkLPlz1hpmQ8WA317+ZIrbGobWAyF78LCfYzVsht/2ehjjsCo9tfaiZG5kV8V/FGn4u4yhb1Zqa4dyCt6FJMidHI5Vmc9jmIuxC51SiB0rRH16t1KymAnCAbblFKNGWaKiX9oynWEa3mQjXdxwSlsQyZg8TowVsbumUCmluH+B7I8BK+4ib6sX30GTCqIV/l9H9ndPI+kuFt/O9EmyCVKNef57IE5Xz2lCUiyZvc7hVzW1jMp7PHCkr11VY4SS5birzN2nlu7pbgt2aigO/GrgYoVFoeuAK5fdwNg2nXgo47KDpXHK5SfzzvOCzRWIuQ+ztxS+w+EZGMgdtvDkeZF03zo2oZA3ulgPV9bi2adgpqMh1XQ3Y8AClJT97p/Xv2sIjczUrxeO/9oNXKM1F8oZnzdx/TEk++wK5ZODlpu/r8WKrYZjoj4tf3WfaLDfVkP4L3zv+/4dE/TrSxLVxPaWa4PGtfNH2URM7NtTUzVwQiIuqTkOSeJUBINc0uIiZ8S3Qv/yVXXPdQi1kTNhHPYDb9eQzidOSHsftyNrqBVBcRe/MN7m8+9R4+FNtpQNUkBBvSWAHmQOZ8tptXMZwWEZ/1P2FiY6MQ6YSfuTcwwmCoJ/7MXLWodbyxNHPtBrBrcwhBdLcA4T/hQ5qVJUa3qdEvMHDkyjodUMPAKntOtNiJ44jPdzwCWBUnvasuQ1G87bVIevVXxUlpos04Y9dmCeZT9FjQOk3H8pewRvG5QPG6j4u/V40rfgXhkeFboELmWH/OLEHxGG1iChcrfffCJebRmXQ870zx1gwmWnLvcmlYTAvzCzvs5IG/ucUEKUFcIYhsuMuh1PNdcf8IogbWazFmvN6z/ig45loYR0St8aN3iqhnTWIuzlAkcaQZD55oVU8FQTg6QBfSlaimOlALYAAAAA');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Client-side Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | These are messages made available to the client browser via JavaScript.
+    | To compile this file run: php artisan october:util compile lang
+    |
+    */
+
+    'markdowneditor' => [
+        'formatting' => '格式',
+        'quote' => '引用',
+        'code' => '程式碼',
+        'header1' => '標題一',
+        'header2' => '標題二',
+        'header3' => '標題三',
+        'header4' => '標題四',
+        'header5' => '標題五',
+        'header6' => '標題六',
+        'bold' => '粗體',
+        'italic' => '斜體',
+        'unorderedlist' => '項目清單',
+        'orderedlist' => '數字清單',
+        'video' => '影片',
+        'image' => '圖片',
+        'link' => '連結',
+        'horizontalrule' => '插入水平線',
+        'fullscreen' => '全螢幕',
+        'preview' => '預覽',
+    ],
+    'mediamanager' => [
+        'insert_link' => '插入媒體櫃連結',
+        'insert_image' => '插入媒體櫃圖片',
+        'insert_video' => '插入媒體櫃影片',
+        'insert_audio' => '插入媒體櫃音訊',
+        'invalid_file_empty_insert' => '請選擇檔案以插入連結。',
+        'invalid_file_single_insert' => '請選擇一個檔案。',
+        'invalid_image_empty_insert' => '請選擇插入的圖片。',
+        'invalid_video_empty_insert' => '請選擇插入的影片。',
+        'invalid_audio_empty_insert' => '請選擇插入的音訊。',
+    ],
+    'alert' => [
+        'confirm_button_text' => '確認',
+        'cancel_button_text' => '取消',
+        'widget_remove_confirm' => '確定移除此元件？',
+    ],
+    'datepicker' => [
+        'previousMonth' => '上個月',
+        'nextMonth' => '下個月',
+        'months' => ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+        'weekdays' => ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+        'weekdaysShort' => ['週日', '週一', '週二', '週三', '週四', '週五', '週六']
+    ],
+    'colorpicker' => [
+        'choose' => '確定',
+    ],
+    'filter' => [
+        'group' => [
+            'all' => '全部',
+        ],
+        'scopes' => [
+            'apply_button_text' => '確定',
+            'clear_button_text' => '清除',
+        ],
+        'dates' => [
+            'all' => '全部',
+            'filter_button_text' => '篩選',
+            'reset_button_text' => '重置',
+            'date_placeholder' => '日期',
+            'after_placeholder' => '在此之後',
+            'before_placeholder' => '在此之前',
+        ],
+        'numbers' => [
+            'all' => '全部',
+            'filter_button_text' => '篩選',
+            'reset_button_text' => '重置',
+            'min_placeholder' => '最小值',
+            'max_placeholder' => '最大值',
+        ],
+    ]
+];

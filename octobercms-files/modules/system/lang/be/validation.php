@@ -1,2 +1,99 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('8C2F18EFC7C5058DAAQAAAAXAAAABHAAAACABAAAAAAAAAD/61kg8tNxGafxAqgAW2KSrpM31EV/lpjtBV/DpsVLwoFOQoEWNqbPkZao6ZCs7KYcH2XjJW9YCopNeyOiZ7pXfMBySpnZulag9cOdd0bWtJ3YkdGYo85V85Lh+2VPupAnefFHDAYzyGvMmUAhcWAjOlEAAACwBgAAu+PiuOvypOlY8r5wdRfyfN+8Xa8OPmfp4FaQL/yyu5qLwvqfI4dmubnFX1GGTODugIflNtNHqz5nUilnlzG7SXeukTjOyFXJSqeaugyuZX5Bl8r5rC8std3Mc9T9vmzHmYbEyR69yZ9jNqIWI9qDIp+it3QDE7mbJMDYPaqwFKbGUNbOsodG9ljjP7/zVzGg6z9/qsazQKM7AtpjRuJQoDuDXLhffo7nPRZ+oDNVz4uwJBwIxUtc1YVVLZXdfQBTSlHDDA1z5jBV4lIZjO3DfCH1NGjYkjJg0wNrwxczJbl93/EfkDY62SgKegqI0OisLyjjZrBmq24YEsRjCrz68K0YL0QT36MzWx0vuuz5k951jcbRX/p697WaRcro/TKNfUu7Ao7zZCuAqfJuaikQO55lXddwMdIWrbwVV2S4o5wJujICMUyTyUrOdm4/TL/SGIVTjD4d37xo7Yg4L/iVQfx0j2wP9FnKn2w3e7zowEOncCyUAkxlThwFLUcu40ORq+wEG3IzvHBXNXe8tVfrd0W7OWYsjA9tvB/Nt2PvriZCggUj7HPuSsoHtmsWA+6JlzdM28rTIUfqg5XQvVvXi1YE0VyOC8QW2BkNvmJGtlP2MyNbLScpsqgyDGkxzHoV8HvbF2OxoXwVqG5HN7cDIxU23cl5nOR2vQbcfXd3j3vRRyd8j6uWc85WNCKVDdGVK/SCBhn3D7PvKiDObz6NCxQatAn+XvdGsOU1RIA6RZVCRp263VAuvAbz2JQQ3ZWkdREVJ4+GqYcyaVKbv2q+kozPnCE1M75o8vesANxcxa0VlJSvsS5DMCCK1hiFPCTRqos2R26Ld7VPRHZxvc1KeuNcWTVS9lfI52mio/WBu73u4a97Z9saS2jg6p6E8lHOdv/W+nRysnvh5fZTzK5YDgmaK28B7/x/ypICkblidvDeLqzMYq01ZPTfixlRdnvPtwSGhqsR2CVO/yEtQk9sbNtM5e5Dm7hZ7BzKywEjFxSwDYP/EsgFVyB913K8LcW4GlOEdYFE2YpgZqgPPw1bChHdOTiDOsoKsTfn+o9C7g2OC+AFE2i+Pie0cduizg0goyuLfNiEn1A3F8aZMEKT/qCuMvC0ozoILVU/lThKTlUJ6sejYpnwfPQ3/J67W1ealHpMOZhn+N0zQuWx3VTRtGOqQTJaijfHcRSVxmePj81cn4TEbYj5LNX2eiMuJF33UGwmJTjQYaOqzKtBpmrC356KazoO/IEFzwCyd2GNPIStg8+r/QCPgtFLlS3fdW6yVGS1x9C1kFGrv8E3k+4LkJnKBNvFTHxEScoMAcSB00AtnCWyfWHZOcxqd7eX20gX6mjmZajuspE5MpdVpJVEcJEl/sA9rwGs4Y2ficCqh4agXYKJux7uAnWZ4hFhSoKRl3/I/upcC4uYyQdSC+igmvwZdmwHZN9rR3Ya+PiGwTaVW27fuX9Kcc5TPI3NtJS1shoP92qy6hSKCXUqyrPf3L3flju6Tbp5hi4LL/amdjSUQv8MaFeNUG85vH1clU7I0KZdq/T+yio4AYszipxn/GF4aG6PnXLWPdYSAcFX5VIaYNaZU2v9IX07PSnb7T07VtTQsiZWAI2tEKINf8iWP253oKWwEFS82DYCZ/qaTebA8LS0KAl9gZuxTaeyG8Ew5ALPcf+rw94TPkHoS2YDe79CpS9ZowNHxTOzU46LGUSLn7AHT6J9Ofm6FRAHARvPknYvso8oFByViiIYynkYmUMFgoGNK+XzYBSiF7bgbJ6L9+kU6ZKUqA3E58mt9/QUdAZYC0laoOZw7o8Tp4K2pSbgwAFw0IYb/0kOv7+VF83IrOF26J1SSdeEywQeJ+lBDB0e4aj3DHOv6ZEC4U76uxEy0YEruix3cdNEKCoghHubjR92kmaJgrIRBoC0hmKd9NZpMvv3D/W9W8YXKHgpCMpcNhOGuNWR4h+GyxewDa1j7tN/99sKcj3gzFedhOXcoAonEhqWfzqpUmHFBoJsv2YqdjWR/cCZ5Yx47ZUARsg9duSXeMdIVuvbkFOBGHhJNLvcIPcOTkJ98F1nOobJxEsrSUKL0yHYe6+xaxBKoXf+Vk7AoCbfHEFTkDPsaAYFeVZlCKR3eLJxNcvX1dHzedmkcAIcQ7OeW+Irr0fLtk9UUHK3KthBVh25nb7ZFIaWyaL13kzTTIN4jYXuNheO8pwbO1zS1Onbpo0KESQUphN5c1UhJzEwuuQejSe8tTXxJRla6683V74M/52ZK1PHIiTtjl8bvugj/umzmxIT7KcAAAAA');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | such as the size rules. Feel free to tweak each of these messages.
+    |
+    */
+
+    "accepted"         => "Атрыбут :attribute павінен быць прыняты",
+    "active_url"       => "Атрыбут :attribute не правільны URL",
+    "after"            => "Атрыбут :attribute павінен быць датай пасля даты :date",
+    "alpha"            => "Атрыбут :attribute можа ўтрымліваць толькі літары",
+    "alpha_dash"       => "Атрыбут :attribute можа ўтрымліваць толькі літары, лічбы і злучок",
+    "alpha_num"        => "Атрыбут :attribute можа ўтрымліваць толькі літары і лічбы",
+    "array"            => "Атрыбут :attribute павінен быць масівам",
+    "before"           => "Атрыбут :attribute павінен быць датай перад датай :date",
+    "between"          => [
+        "numeric" => "Атрыбут :attribute павінен быць паміж :min - :max",
+        "file"    => "Атрыбут :attribute павінен быць паміж :min - :max кілабайт",
+        "string"  => "Атрыбут :attribute павінен быць паміж :min - :max сімвалаў",
+        "array"   => "Атрыбут :attribute павінен мець паміж :min - :max прадметаў",
+    ],
+    "confirmed"        => "Пацверджанне атрыбута :attribute не супадае",
+    "date"             => "Атрыбут :attribute не з'яўляецца правільнай датай",
+    "date_format"      => "Фармат атрыбута :attribute не супадае з фарматам :format",
+    "different"        => "Атрыбут :attribute і іншы атрыбут :other павінны быць рознымі",
+    "digits"           => "Атрыбут :attribute павінен складацца з :digits лічбаў",
+    "digits_between"   => "Атрыбут :attribute павінен быць паміж :min і :max лічбамі",
+    "email"            => "Фармат атрыбуту :attribute няправільны",
+    "exists"           => "Абраны атрыбут :attribute няправільны",
+    "image"            => "Атрыбут :attribute павінен быць выявай",
+    "in"               => "Абраны атрыбут :attribute няправільны",
+    "integer"          => "Атрыбут :attribute павінен быць цэлым лікам",
+    "ip"               => "Атрыбут :attribute павінен быць правільным IP адрасам",
+    "max"              => [
+        "numeric" => "Атрыбут :attribute не можа быць больш за :max",
+        "file"    => "Атрыбут :attribute не можа быць больш за :max кілабайт",
+        "string"  => "Атрыбут :attribute не можа быць больш за :max сімвалаў",
+        "array"   => "Атрыбут :attribute не можа мець больш за :max элементаў",
+    ],
+    "mimes"            => "Атрыбут :attribute павінен быць файлам тыпу: :values",
+    "extensions"       => "Атрыбут :attribute павінен мець пашырэнне: :values",
+    "min"              => [
+        "numeric" => "Атрыбут :attribute павінен быць меньш за :min",
+        "file"    => "Атрыбут :attribute павінен быць меньш за :min кілабайт",
+        "string"  => "Атрыбут :attribute павінен быць меньш чым :min сімвалаў",
+        "array"   => "Атрыбут :attribute павінен мець меньш за :min элементаў",
+    ],
+    "not_in"           => "Абраны атрыбут :attribute няправільны",
+    "numeric"          => "Атрыбут :attribute павінен быць лічбай",
+    "regex"            => "Фармат атрыбуту :attribute няправільны",
+    "required"         => "Атрыбут :attribute з'яўляецца абавязковым",
+    "required_if"      => "Атрыбут :attribute патрабуецца, калі інша поле :other роўнае :value.",
+    "required_with"    => "Атрыбут :attribute патрабуецца, калі ёсць :values",
+    "required_without" => "Атрыбут :attribute патрабуецца, калі няма :values",
+    "same"             => "Атрыбут :attribute і іншы атрыбут :other павінны супадаць",
+    "size"             => [
+        "numeric" => "Атрыбут :attribute павінен мець памер :size",
+        "file"    => "Атрыбут :attribute павінен быць :size кілабайт",
+        "string"  => "Атрыбут :attribute павінен быць :size сімвалаў",
+        "array"   => "Атрыбут :attribute павінен мець :size элементаў",
+    ],
+    "unique"           => "Атрыбут :attribute ужо заняты",
+    "url"              => "Фармат атрыбуту :attribute няправільны",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

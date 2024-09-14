@@ -4,28 +4,18 @@
 'use strict';
 
 oc.Modules.register('backend.formwidget.repeater.base', function() {
-    class RepeaterFormWidgetBase extends oc.FoundationPlugin
-    {
-        constructor(element, config) {
-            super(element, config);
-
-            this.$el = $(element);
-            this.$itemContainer = $('> .field-repeater-items', this.$el);
+    class RepeaterFormWidgetBase extends oc.ControlBase {
+        init() {
             this.itemCount = 0;
             this.canAdd = true;
             this.canRemove = true;
+            this.toolbarBusy = false;
             this.repeaterId = $.oc.domIdManager.generate('repeater');
-
-            this.markDisposable();
-            this.init();
+            this.initDefaults();
         }
 
-        static get DATANAME() {
-            return 'ocRepeater';
-        }
-
-        static get DEFAULTS() {
-            return {
+        initDefaults() {
+            const defaults = {
                 useReorder: true,
                 sortableHandle: '.repeater-item-handle',
                 removeHandler: 'onRemoveItem',
@@ -36,13 +26,23 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
                 titleFrom: null,
                 minItems: null,
                 maxItems: null
+            };
+
+            for (const key in defaults) {
+                if (this.config[key] === undefined) {
+                    this.config[key] = defaults[key];
+                }
             }
         }
 
-        init() {
+        connect() {
             if (this.config.useReorder) {
                 this.bindSorting();
             }
+
+            // Init elements
+            this.$el = $(this.element);
+            this.$itemContainer = $('> .field-repeater-items', this.$el);
 
             // Items
             var headSelect = this.selectorHeader;
@@ -59,19 +59,18 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
             this.$toolbar.on('click', '> [data-repeater-cmd=add]', this.proxy(this.onAddItemButton));
             this.$toolbar.on('ajaxDone', '> [data-repeater-cmd=add]', this.proxy(this.onAddItemSuccess));
 
-            this.$el.one('dispose-control', this.proxy(this.dispose));
-
-            this.initToolbarExtensionPoint();
-            this.initExternalToolbarEventBus();
-            this.mountExternalToolbarEventBusEvents();
-
             this.countItems();
             this.togglePrompt();
 
-            this.extendExternalToolbar();
+            // External toolbar
+            setTimeout(() => {
+                this.initToolbarExtensionPoint();
+                this.mountExternalToolbarEventBusEvents();
+                this.extendExternalToolbar();
+            }, 0);
         }
 
-        dispose() {
+        disconnect() {
             if (this.config.useReorder) {
                 this.sortable.destroy();
             }
@@ -90,15 +89,13 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
             this.$toolbar.off('click', '> [data-repeater-cmd=add]', this.proxy(this.onAddItemButton));
             this.$toolbar.off('ajaxDone', '> [data-repeater-cmd=add]', this.proxy(this.onAddItemSuccess));
 
-            this.$el.off('dispose-control', this.proxy(this.dispose));
             this.$el.removeData('oc.repeater');
             this.unmountExternalToolbarEventBusEvents();
 
             this.$el = null;
             this.$toolbar = null;
             this.$sortableBody = null;
-
-            super.dispose();
+            this.sortable = null;
         }
 
         bindSorting() {
@@ -110,7 +107,12 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
                 multiDrag: true,
                 avoidImplicitDeselect: true,
                 handle: this.config.sortableHandle,
-                onEnd: this.proxy(this.onSortableEnd)
+                onEnd: this.proxy(this.onSortableEnd),
+
+                // Auto scroll plugin
+                forceAutoScrollFallback: true,
+                scrollSensitivity: 60,
+                scrollSpeed: 20
             });
         }
 
@@ -142,6 +144,10 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
             $dropdownList.html(templateHtml);
 
             this.eventMenuFilter($item, $dropdownList);
+
+            if (this.toolbarBusy) {
+                $('li', $dropdownList).addClass('disabled');
+            }
         }
 
         clickRemoveItem(ev) {
@@ -197,8 +203,11 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
                 return;
             }
 
-            this.eventOnAddItem();
-            this.onDuplicateItem(this.findItemFromTarget(ev.target));
+            this.toolbarBusy = true;
+
+            var $item = this.findItemFromTarget(ev.target);
+            this.eventOnDuplicateItem($item);
+            this.onDuplicateItem($item);
         }
 
         onDuplicateItem($item) {
@@ -212,6 +221,7 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
             $item.request(this.config.duplicateHandler, {
                 data: itemData,
                 afterUpdate: function(data) {
+                    self.toolbarBusy = false;
                     if (data.result) {
                         self.onDuplicateItemSuccess($item, data.result.duplicateIndex);
                     }
@@ -230,6 +240,7 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
 
             this.countItems();
             this.triggerChange();
+            this.eventDuplicateOnEnd();
         }
 
         clickMoveItemUp(ev) {
@@ -259,6 +270,11 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
                 templateHtml = $('> [data-group-palette-template]', this.$el).html(),
                 $target = $(ev.target),
                 $form = this.$el.closest('form');
+
+            // Prevent adding new items until last one is finished
+            if ($target.hasClass('oc-loading')) {
+                return;
+            }
 
             $target.ocPopover({
                 content: templateHtml
@@ -440,29 +456,15 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
                 return;
             }
 
-            // Expected format: tailor.app::toolbarExtensionPoint
-            const parts = this.config.externalToolbarAppState.split('::');
-            if (parts.length !== 2) {
-                throw new Error('Invalid externalToolbarAppState format. Expected format: module.name::stateElementName');
+            const point = $.oc.vueUtils.getToolbarExtensionPoint(
+                this.config.externalToolbarAppState,
+                this.$el.get(0)
+            );
+
+            if (point) {
+                this.toolbarExtensionPoint = point.state;
+                this.externalToolbarEventBusObj = point.bus;
             }
-
-            const app = oc.Modules.import(parts[0]);
-            this.toolbarExtensionPoint = app.state[parts[1]];
-        }
-
-        initExternalToolbarEventBus() {
-            if (!this.config.externalToolbarEventBus) {
-                return;
-            }
-
-            // Expected format: tailor.app::eventBus
-            const parts = this.config.externalToolbarEventBus.split('::');
-            if (parts.length !== 2) {
-                throw new Error('Invalid externalToolbarEventBus format. Expected format: module.name::stateElementName');
-            }
-
-            const module = oc.Modules.import(parts[0]);
-            this.externalToolbarEventBusObj = module.state[parts[1]];
         }
 
         mountExternalToolbarEventBusEvents() {
@@ -561,7 +563,7 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
             });
 
             var that = this,
-                $buttons = this.$el.find('> .field-repeater-builder > .field-repeater-toolbar a, > .field-repeater-toolbar a');
+                $buttons = this.$el.find('> .field-repeater-builder > .field-repeater-toolbar > button, > .field-repeater-toolbar > button');
 
             $buttons.each(function () {
                 var $button = $(this),
@@ -606,6 +608,12 @@ oc.Modules.register('backend.formwidget.repeater.base', function() {
         }
 
         eventOnErrorAddItem() {
+        }
+
+        eventOnDuplicateItem($fromItem) {
+        }
+
+        eventDuplicateOnEnd() {
         }
 
         eventMenuFilter() {

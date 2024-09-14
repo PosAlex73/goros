@@ -1,2 +1,192 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php namespace Backend\Classes;
+
+use October\Rain\Database\Model;
+use October\Rain\Html\Helper as HtmlHelper;
+use October\Rain\Element\Lists\ColumnDefinition;
+
+/**
+ * ListColumn definition is a translation of the list column configuration
+ *
+ * @method ListColumn valueFrom(string $valueFrom) valueFrom is a model attribute to use for the accessed value
+ * @method ListColumn displayFrom(string $displayFrom) displayFrom is a model attribute to use for the displayed value
+ * @method ListColumn defaults(string $defaults) defaults specifies a default value when value is empty
+ * @method ListColumn sqlSelect(string $sqlSelect) sqlSelect is a custom SQL for selecting this record display value, the `@` symbol is replaced with the table name.
+ * @method ListColumn relation(string $relation) Relation name, if this column represents a model relationship.
+ * @method ListColumn relationCount(bool $relationCount) Count mode to display the number of related records.
+ * @method ListColumn relationWith(string $relationWith) Eager load this dot-notated relation definition with the list query.
+ * @method ListColumn width(string $width) sets the column width, can be specified in percents (10%) or pixels (50px).
+ * @method ListColumn cssClass(string $cssClass) Specify a CSS class to attach to the list cell element.
+ * @method ListColumn headCssClass(string $headCssClass) Specify a CSS class to attach to the list header cell element.
+ * @method ListColumn format(string $format) Specify a format or style for the column value, such as a Date.
+ * @method ListColumn path(string $path) Specifies a path for partial-type fields.
+ * @method ListColumn sortableDefault(string $sortableDefault) sortableDefault makes the field sorted by default, either as asc or desc.
+ * @method ListColumn valueTrans(bool $valueTrans) valueTrans determines if display values (model attributes) should be translated
+ * @method ListColumn tooltip(array|string $tooltip) tooltip title to display next to the column value, as an array can contain title, placement, icon.
+ *
+ * @package october\backend
+ * @author Alexey Bobkov, Samuel Georges
+ */
+class ListColumn extends ColumnDefinition
+{
+    /**
+     * __construct using old and new interface
+     */
+    public function __construct($config = [], $label = null)
+    {
+        // @deprecated old API
+        if (!is_array($config)) {
+            return parent::__construct([
+                'columnName' => $config,
+                'label' => $label
+            ]);
+        }
+
+        parent::__construct($config);
+    }
+
+    /**
+     * initDefaultValues for this field
+     */
+    protected function initDefaultValues()
+    {
+        parent::initDefaultValues();
+
+        $this
+            ->valueTrans(true)
+        ;
+    }
+
+    /**
+     * evalConfig
+     */
+    public function evalConfig(array $config)
+    {
+        if (isset($config['select'])) {
+            $this->sqlSelect($config['select']);
+        }
+
+        if (isset($config['default'])) {
+            $this->defaults($config['default']);
+        }
+    }
+
+    /**
+     * getName returns a HTML valid name for the column name.
+     * @return string
+     */
+    public function getName()
+    {
+        return HtmlHelper::nameToId($this->columnName);
+    }
+
+    /**
+     * getId returns a value suitable for the column id property.
+     * @param  string $suffix Specify a suffix string
+     * @return string
+     */
+    public function getId($suffix = null)
+    {
+        $id = 'column';
+
+        $id .= '-'.$this->columnName;
+
+        if ($suffix) {
+            $id .= '-'.$suffix;
+        }
+
+        return HtmlHelper::nameToId($id);
+    }
+
+    /**
+     * getDisplayValue checks to see if display values (model attributes) should be translated,
+     * and also escapes the value
+     */
+    public function getDisplayValue($value)
+    {
+        if ($this->valueTrans) {
+            return e(__($value));
+        }
+
+        return e($value);
+    }
+
+    /**
+     * getAlignClass returns the column specific alignment css class.
+     * @return string
+     */
+    public function getAlignClass()
+    {
+        return $this->align ? 'list-cell-align-' . $this->align : '';
+    }
+
+    /**
+     * useRelationCount
+     */
+    public function useRelationCount(): bool
+    {
+        if (!$this->relation) {
+            return false;
+        }
+
+        // @deprecated use relationCount instead
+        if (($value = $this->getConfig('useRelationCount')) !== null) {
+            return $value;
+        }
+
+        return (bool) $this->relationCount;
+    }
+
+    /**
+     * getValueFromData returns this columns value from a supplied data set, which can be
+     * an array or a model or another generic collection.
+     * @param mixed $data
+     * @param mixed $default
+     * @return mixed
+     */
+    public function getValueFromData($data, $default = null)
+    {
+        $columnName = $this->valueFrom ?: $this->columnName;
+
+        return $this->getColumnNameFromData($columnName, $data, $default);
+    }
+
+    /**
+     * Internal method to extract the value of a column name from a data set.
+     * @param string $columnName
+     * @param mixed $data
+     * @param mixed $default
+     * @return mixed
+     */
+    protected function getColumnNameFromData($columnName, $data, $default = null)
+    {
+        /*
+         * Array column name, eg: column[key][key2][key3]
+         */
+        $keyParts = HtmlHelper::nameToArray($columnName);
+        $result = $data;
+
+        /*
+         * Loop the column key parts and build a value.
+         * To support relations only the last column should return the
+         * relation value, all others will look up the relation object as normal.
+         */
+        foreach ($keyParts as $key) {
+            if ($result instanceof Model && $result->hasRelation($key)) {
+                $result = $result->{$key};
+            }
+            else {
+                if (is_array($result) && array_key_exists($key, $result)) {
+                    $result = $result[$key];
+                }
+                elseif (!isset($result->{$key})) {
+                    return $default;
+                }
+                else {
+                    $result = $result->{$key};
+                }
+            }
+        }
+
+        return $result;
+    }
+}

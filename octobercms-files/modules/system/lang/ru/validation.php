@@ -1,2 +1,150 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    'accepted'             => 'Поле :attribute должно быть принято.',
+    'active_url'           => 'Поле :attribute неправильный URL.',
+    'after'                => 'Поле :attribute должно быть датой после :date.',
+    'after_or_equal'       => 'Поле :attribute должно быть датой после или равно :date.',
+    'alpha'                => 'Поле :attribute может содержать только буквы.',
+    'alpha_dash'           => 'Поле :attribute может содержать только буквы, цифры и дефис.',
+    'alpha_num'            => 'Поле :attribute может содержать только буквы и цифры.',
+    'array'                => 'Поле :attribute должен быть массивом.',
+    'before'               => 'Поле :attribute должно быть датой до :date.',
+    'before_or_equal'      => 'Поле :attribute должно быть датой до или равно :date.',
+    'between'              => [
+        'numeric' => 'Поле :attribute должно быть между :min до :max.',
+        'file'    => 'Поле :attribute должно быть между :min до :max килобайт.',
+        'string'  => 'Поле :attribute должно быть от :min до :max символов(а).',
+        'array'   => 'Поле :attribute должно иметь от :min до :max элементов(а).',
+    ],
+    'boolean'              => 'Поле :attribute должно быть true или false.',
+    'confirmed'            => 'Поле :attribute не совпадает с подтверждением.',
+    'date'                 => 'Поле :attribute имеет не правильный формат даты.',
+    'date_equals'          => 'Поле :attribute должно быть датой и равно :date.',
+    'date_format'          => 'Поле :attribute должно быть датой в формате :format.',
+    'different'            => 'Поле :attribute и :other должны различаться.',
+    'digits'               => 'Длина цифрового поля :attribute должна быть :digits.',
+    'digits_between'       => 'Длина цифрового поля :attribute должна быть между :min и :max.',
+    'dimensions'           => 'Поле :attribute имеет не верные размеры изображения.',
+    'distinct'             => 'Поле :attribute имеет повторяющееся значение.',
+    'email'                => 'Поле :attribute должно быть действительным адресом эл. почты.',
+    'ends_with'            => 'Поле :attribute должно заканчиваться на: :values.',
+    'exists'               => 'Выбранное значение для :attribute отсутствует.',
+    'file'                 => 'Поле :attribute должно быть файлом.',
+    'filled'               => 'Поле :attribute должно быть заполнено.',
+    'gt'                   => [
+        'numeric' => 'Поле :attribute должно быть больше :value.',
+        'file'    => 'Поле :attribute должно быть больше :value килобайт.',
+        'string'  => 'Поле :attribute должно быть длиннее :value символов(а).',
+        'array'   => 'Поле :attribute должно иметь больше :value элементов(а).',
+    ],
+    'gte'                  => [
+        'numeric' => 'Поле :attribute должно быть больше или равно :value.',
+        'file'    => 'Поле :attribute должно быть больше или равно :value килобайт.',
+        'string'  => 'Поле :attribute должно быть больше или равно :value символов(а).',
+        'array'   => 'Поля :attribute должно содержать больше или равно :value элементов(а).',
+    ],
+    'image'                => 'Поле :attribute должно быть изображением.',
+    'in'                   => 'Выбранное значение для :attribute ошибочно.',
+    'in_array'             => 'Поле :attribute не существует в :other.',
+    'integer'              => 'Поле :attribute должно быть цифрой.',
+    'ip'                   => 'Поле :attribute должно быть действительным IP-адресом.',
+    'ipv4'                 => 'Поле :attribute должно быть действительным IPv4-адресом.',
+    'ipv6'                 => 'Поле :attribute должно быть действительным IPv6-адресом.',
+    'json'                 => 'Поле :attribute должно быть корректной JSON строкой.',
+    'lt'                   => [
+        'numeric' => 'Поле :attribute должно быть меньше :value.',
+        'file'    => 'Поле :attribute должно быть меньше :value килобайт.',
+        'string'  => 'Поле :attribute должно быть меньше :value символов(а).',
+        'array'   => 'Поле :attribute должно содержать меньше :value элементов(а).',
+    ],
+    'lte'                  => [
+        'numeric' => 'Поле :attribute должно быть меньше или равно :value.',
+        'file'    => 'Поле :attribute должно быть меньше или равно :value килобайт.',
+        'string'  => 'Поле :attribute должно быть меньше или равно :value символов(а).',
+        'array'   => 'Поле :attribute должно содержать меньше или равно :value элементов(а).',
+    ],
+    'max'                  => [
+        'numeric' => 'Поле :attribute не может быть больше чем :max.',
+        'file'    => 'Поле :attribute не может быть больше чем :max килобайт.',
+        'string'  => 'Поле :attribute не может быть больше чем :max символов(а).',
+        'array'   => 'Поле :attribute не может содержать больше чем :value элементов(а).',
+    ],
+    'mimes'                => 'Поле :attribute должен быть файлом типа: :values.',
+    'mimetypes'            => 'Поле :attribute должен быть файлом типа: :values.',
+    'min'                  => [
+        'numeric' => 'Поле :attribute должно быть не менее :min.',
+        'file'    => 'Поле :attribute должно быть не менее :min килобайт.',
+        'string'  => 'Поле :attribute должно быть не менее :min символов(а).',
+        'array'   => 'Поле :attribute должно содержать не менее :min элементов(а).',
+    ],
+    'not_in'               => 'Выбранное значение для :attribute ошибочно.',
+    'not_regex'            => 'Поле :attribute имеет неправильный формат.',
+    'numeric'              => 'Поле :attribute должно быть цифрой.',
+    'present'              => 'Должно :attribute должно быть представлено.',
+    'regex'                => 'Поле :attribute имеет неправильный формат.',
+    'required'             => 'Поле :attribute обязательно.',
+    'required_if'          => 'Поле :attribute обязательно если поле :other равно :value.',
+    'required_unless'      => 'Поле :attribute обязательно если поле :other не имеет :values.',
+    'required_with'        => 'Поле :attribute обязательно для заполнения, когда :values указано.',
+    'required_with_all'    => 'Поле :attribute обязательно, когда все :values указаны.',
+    'required_without'     => 'Поле :attribute обязательно, когда :values не указано.',
+    'required_without_all' => 'Поле :attribute обязательно для заполнения, когда все :values не указаны.',
+    'same'                 => 'Поле :attribute и :other должны совпадать.',
+    'size'                 => [
+        'numeric' => 'Поле :attribute должно быть :size.',
+        'file'    => 'Поле :attribute должно быть :size килобайт.',
+        'string'  => 'Поле :attribute должно быть длиной в :size символов(а).',
+        'array'   => 'Поле :attribute должно содержать :size элементов(а).',
+    ],
+    'starts_with'          => 'Поле :attribute должно начинаться с: :values.',
+    'string'               => 'Поле :attribute должно быть символьной строкой.',
+    'timezone'             => 'Поле :attribute должно быть часовым поясом.',
+    'unique'               => 'Поле :attribute уже занято другой записью.',
+    'uploaded'             => 'Поле :attribute неуспешно загрузилось.',
+    'url'                  => 'Поле :attribute имеет ошибочный формат URL.',
+    'uuid'                 => 'Поле :attribute должно быть правильным UUID.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

@@ -1,2 +1,497 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php namespace Cms\Classes;
+
+use Ini;
+use Lang;
+use Cache;
+use Config;
+use System;
+use Cms\Twig\Loader as TwigLoader;
+use Cms\Twig\DebugExtension;
+use Cms\Twig\Extension as CmsTwigExtension;
+use Cms\Components\ViewBag;
+use System\Twig\Extension as SystemTwigExtension;
+use October\Rain\Halcyon\Processors\SectionParser;
+use Twig\Source as TwigSource;
+use Twig\Environment as TwigEnvironment;
+use ApplicationException;
+
+/**
+ * CmsCompoundObject base class for CMS objects that have multiple sections - pages, partials and layouts.
+ * The class implements functionality for the compound object file parsing. It also provides a way
+ * to access parameters defined in the INI settings section as the object properties.
+ *
+ * @package october\cms
+ * @author Alexey Bobkov, Samuel Georges
+ */
+class CmsCompoundObject extends CmsObject
+{
+    /**
+     * @var array components defined in the template file
+     */
+    public $components = [];
+
+    /**
+     * @var array settings defined in the template file. Not to be confused
+     * with the attribute called settings. In this array, components are bumped
+     * to their own array inside the 'components' key.
+     */
+    public $settings = [
+        'components' => []
+    ];
+
+    /**
+     * @var array viewBag contains the view bag properties.
+     * This property is used by the page editor internally.
+     */
+    public $viewBag = [];
+
+    /**
+     * @var array fillable attributes that are mass assignable.
+     */
+    protected $fillable = [
+        'markup',
+        'settings',
+        'code'
+    ];
+
+    /**
+     * @var array passthru methods that should be returned from the collection of all objects.
+     */
+    protected $passthru = [
+        'lists',
+        'pluck',
+        'where',
+        'sortBy',
+        'whereComponent',
+        'withComponent'
+    ];
+
+    /**
+     * @var bool isCompoundObject for models that support code and settings sections.
+     */
+    protected $isCompoundObject = true;
+
+    /**
+     * @var array|null objectComponentPropertyMap cache for component properties.
+     */
+    protected static $objectComponentPropertyMap;
+
+    /**
+     * @var mixed viewBagCache store for the getViewBag method.
+     */
+    protected $viewBagCache = false;
+
+    /**
+     * afterFetch event
+     */
+    public function afterFetch()
+    {
+        $this->parseComponentSettings();
+        $this->validateSettings();
+        $this->parseSettings();
+    }
+
+    /**
+     * beforeSave event
+     */
+    public function beforeSave()
+    {
+        $this->checkSafeMode();
+    }
+
+    /**
+     * newCollection creates a new Collection instance.
+     * @return \October\Rain\Halcyon\Collection
+     */
+    public function newCollection(array $models = [])
+    {
+        return new CmsObjectCollection($models);
+    }
+
+    /**
+     * toArray returns an array representation of the object
+     * @return array
+     */
+    public function toArray()
+    {
+        $result = [];
+        foreach ($this->fillable as $property) {
+            $result[$property] = $this->$property;
+        }
+
+        return $result;
+    }
+
+    /**
+     * validateSettings if the model is loaded with an invalid INI section, the invalid content
+     * will be passed as a special attribute. Look for it, then locate the failure reason.
+     * @return void
+     */
+    protected function validateSettings()
+    {
+        if (isset($this->attributes[SectionParser::ERROR_INI])) {
+            CmsException::mask($this, 200);
+            Ini::parse($this->attributes[SectionParser::ERROR_INI]);
+            CmsException::unmask();
+        }
+    }
+
+    /**
+     * parseSettings array.
+     * Child classes can override this method in order to update the content
+     * of the $settings property after the object is loaded from a file.
+     * @return void
+     */
+    protected function parseSettings()
+    {
+        $this->fillViewBagArray();
+    }
+
+    /**
+     * checkSafeMode checks if safe mode is enabled by config, and the code
+     * attribute is modified and populated. If so an exception is thrown.
+     * @return void
+     */
+    protected function checkSafeMode()
+    {
+        $safeMode = System::checkSafeMode();
+
+        if ($safeMode && $this->isDirty('code') && strlen(trim($this->code))) {
+            throw new ApplicationException(Lang::get('cms::lang.cms_object.safe_mode_enabled'));
+        }
+    }
+
+    //
+    // Components
+    //
+
+    /**
+     * runComponents defined in the settings, this process halts
+     * if a component returns a value.
+     */
+    public function runComponents()
+    {
+        foreach ($this->components as $component) {
+            if ($result = $component->runLifeCycle()) {
+                return $result;
+            }
+        }
+    }
+
+    /**
+     * parseComponentSettings parses component sections
+     * Replace the multiple component sections with a single "components"
+     * element in the $settings property.
+     * @return void
+     */
+    protected function parseComponentSettings()
+    {
+        $this->settings = $this->getSettingsAttribute();
+
+        $components = [];
+        foreach ($this->settings as $setting => $value) {
+            if (!is_array($value)) {
+                continue;
+            }
+
+            $components[$setting] = $value;
+            unset($this->settings[$setting]);
+        }
+
+        $this->settings['components'] = $components;
+    }
+
+    /**
+     * getComponent returns a component by its name.
+     * This method is used only in the back-end and for internal system needs when
+     * the standard way to access components is not an option.
+     * @param string $componentName Specifies the component name.
+     * @return \Cms\Classes\ComponentBase Returns the component instance or null.
+     */
+    public function getComponent($componentName)
+    {
+        if (!($componentSection = $this->hasComponent($componentName))) {
+            return null;
+        }
+
+        return ComponentManager::instance()->makeComponent(
+            $componentName,
+            null,
+            $this->settings['components'][$componentSection]
+        );
+    }
+
+    /**
+     * hasComponent checks if the object has a component with the specified name. Returns
+     * false or the full component name used on the page (it could include the alias).
+     * @param string $componentName Specifies the component name.
+     * @return string|bool
+     */
+    public function hasComponent($componentName)
+    {
+        $componentManager = ComponentManager::instance();
+        $componentName = $componentManager->resolve($componentName) ?: $componentName;
+
+        foreach ($this->settings['components'] as $sectionName => $values) {
+            $result = $sectionName;
+
+            if ($sectionName === $componentName) {
+                return $result;
+            }
+
+            $parts = explode(' ', $sectionName);
+            if (count($parts) > 1) {
+                $sectionName = trim($parts[0]);
+
+                if ($sectionName === $componentName) {
+                    return $result;
+                }
+            }
+
+            $sectionName = $componentManager->resolve($sectionName);
+            if ($sectionName === $componentName) {
+                return $result;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * getComponentProperties returns component property names and values.
+     * This method implements caching and can be used in the run-time on the front-end.
+     * @param string $componentName Specifies the component name.
+     * @return array Returns an associative array with property names in the keys and property values in the values.
+     */
+    public function getComponentProperties($componentName)
+    {
+        $key = self::makeComponentPropertyCacheKey($this->theme);
+
+        if (self::$objectComponentPropertyMap !== null) {
+            $objectComponentMap = self::$objectComponentPropertyMap;
+        }
+        else {
+            $cached = Cache::get($key, false);
+            $unserialized = $cached ? @unserialize(@base64_decode($cached)) : false;
+            $objectComponentMap = $unserialized ?: [];
+            if ($objectComponentMap) {
+                self::$objectComponentPropertyMap = $objectComponentMap;
+            }
+        }
+
+        $objectCode = $this->getBaseFileName();
+
+        if (array_key_exists($objectCode, $objectComponentMap)) {
+            if (array_key_exists($componentName, $objectComponentMap[$objectCode])) {
+                return $objectComponentMap[$objectCode][$componentName];
+            }
+
+            return [];
+        }
+
+        if (!isset($this->settings['components'])) {
+            $objectComponentMap[$objectCode] = [];
+        }
+        else {
+            foreach ($this->settings['components'] as $name => $settings) {
+                $nameParts = explode(' ', $name);
+                if (count($nameParts) > 1) {
+                    $name = trim($nameParts[0]);
+                }
+
+                $component = $this->getComponent($name);
+                if (!$component) {
+                    continue;
+                }
+
+                $componentProperties = [];
+                $propertyDefinitions = $component->defineProperties();
+                foreach ($propertyDefinitions as $propertyName => $propertyInfo) {
+                    $componentProperties[$propertyName] = $component->property($propertyName);
+                }
+
+                $objectComponentMap[$objectCode][$name] = $componentProperties;
+            }
+        }
+
+        self::$objectComponentPropertyMap = $objectComponentMap;
+
+        $expiresAt = now()->addMinutes(Config::get('cms.template_cache_ttl', 1440));
+        Cache::put($key, base64_encode(serialize($objectComponentMap)), $expiresAt);
+
+        if (array_key_exists($componentName, $objectComponentMap[$objectCode])) {
+            return $objectComponentMap[$objectCode][$componentName];
+        }
+
+        return [];
+    }
+
+    /**
+     * makeComponentPropertyCacheKey
+     */
+    protected static function makeComponentPropertyCacheKey($theme): string
+    {
+        return 'cms_component_props_' . md5($theme->getPath());
+    }
+
+    /**
+     * clearCache clears the object cache.
+     * @param \Cms\Classes\Theme $theme Specifies a parent theme.
+     * @return void
+     */
+    public static function clearCache($theme)
+    {
+        Cache::forget(self::makeComponentPropertyCacheKey($theme));
+    }
+
+    //
+    // View Bag
+    //
+
+    /**
+     * getViewBag returns the configured view bag component.
+     * This method is used only in the back-end and for internal system needs when
+     * the standard way to access components is not an option.
+     * @return \Cms\Components\ViewBag Returns the view bag component instance.
+     */
+    public function getViewBag()
+    {
+        if ($this->viewBagCache !== false) {
+            return $this->viewBagCache;
+        }
+
+        $componentName = 'viewBag';
+
+        if (!isset($this->settings['components'][$componentName])) {
+            $viewBag = new ViewBag(null, []);
+            $viewBag->name = $componentName;
+
+            return $this->viewBagCache = $viewBag;
+        }
+
+        return $this->viewBagCache = $this->getComponent($componentName);
+    }
+
+    /**
+     * fillViewBagArray copies view bag properties to the view bag array.
+     * This is required for the back-end editors.
+     * @return void
+     */
+    protected function fillViewBagArray()
+    {
+        $viewBag = $this->getViewBag();
+        foreach ($viewBag->getProperties() as $name => $value) {
+            $this->viewBag[$name] = $value;
+        }
+
+        $this->fireEvent('cmsObject.fillViewBagArray');
+    }
+
+    //
+    // Twig
+    //
+
+    /**
+     * getTwigContent returns the Twig content string
+     * @return string
+     */
+    public function getTwigContent()
+    {
+        return $this->markup;
+    }
+
+    /**
+     * getTwigNodeTree returns Twig node tree generated from the object's markup.
+     * This method is used by the system internally and shouldn't
+     * participate in the front-end request processing.
+     * @link http://twig.sensiolabs.org/doc/internals.html Twig internals
+     * @param mixed $markup Specifies the markup content.
+     * Use FALSE to load the content from the markup section.
+     * @return Twig\Node\ModuleNode A node tree
+     */
+    public function getTwigNodeTree($markup = false)
+    {
+        $loader = new TwigLoader;
+        $twig = new TwigEnvironment($loader, []);
+
+        CmsTwigExtension::addExtensionToTwig($twig);
+        SystemTwigExtension::addExtensionToTwig($twig);
+        DebugExtension::addExtensionToTwig($twig);
+
+        $stream = $twig->tokenize(new TwigSource($markup === false ? $this->markup : $markup, 'getTwigNodeTree'));
+        return $twig->parse($stream);
+    }
+
+    //
+    // Magic
+    //
+
+    /**
+     * __get functionality for visible properties defined in
+     * the settings section or view bag array.
+     */
+    public function __get($name)
+    {
+        if (is_array($this->settings) && array_key_exists($name, $this->settings)) {
+            return $this->settings[$name];
+        }
+
+        if (is_array($this->viewBag) && array_key_exists($name, $this->viewBag)) {
+            return $this->viewBag[$name];
+        }
+
+        return parent::__get($name);
+    }
+
+    /**
+     * __set dynamically sets attributes on the model.
+     *
+     * @param  string  $key
+     * @param  mixed  $value
+     * @return void
+     */
+    public function __set($key, $value)
+    {
+        parent::__set($key, $value);
+
+        if (array_key_exists($key, $this->settings)) {
+            $this->settings[$key] = $this->attributes[$key];
+        }
+    }
+
+    /**
+     * __isset determines if an attribute exists on the object.
+     *
+     * @param  string  $key
+     * @return bool
+     */
+    public function __isset($key)
+    {
+        if (parent::__isset($key) === true) {
+            return true;
+        }
+
+        if (isset($this->viewBag[$key]) === true) {
+            return true;
+        }
+
+        return isset($this->settings[$key]);
+    }
+
+    /**
+     * __call dynamically handles calls into the query instance.
+     *
+     * @param  string  $method
+     * @param  array   $parameters
+     * @return mixed
+     */
+    public function __call($method, $parameters)
+    {
+        if (in_array($method, $this->passthru)) {
+            $collection = $this->get();
+            return call_user_func_array([$collection, $method], $parameters);
+        }
+
+        return parent::__call($method, $parameters);
+    }
+}

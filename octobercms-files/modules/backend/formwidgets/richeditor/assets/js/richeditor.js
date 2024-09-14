@@ -40,6 +40,7 @@
         stylesheet: null,
         fullpage: false,
         editorLang: 'en',
+        editorOptions: null,
         useMediaManager: false,
         toolbarButtons: null,
         allowEmptyTags: null,
@@ -54,18 +55,21 @@
         paragraphFormat: null,
         tableStyles: null,
         tableCellStyles: null,
+        useLineBreaks: null,
         aceVendorPath: '/',
         readOnly: false
     };
 
     RichEditor.prototype.init = function() {
-        var self = this;
-
         this.$el.one('dispose-control', this.proxy(this.dispose));
 
         // Textarea must have an identifier
         if (!this.$textarea.attr('id')) {
             this.$textarea.attr('id', 'element-' + Math.random().toString(36).substring(7));
+        }
+
+        if (this.options.editorOptions.constructor !== {}.constructor) {
+            this.options.editorOptions = {};
         }
 
         if (!this.options.legacyMode) {
@@ -79,12 +83,17 @@
 
     RichEditor.prototype.initFroala = function() {
         var froalaOptions = {
+            ...this.options.editorOptions,
             editorClass: 'control-richeditor',
             language: this.options.editorLang,
             fullPage: this.options.fullpage,
             aceEditorVendorPath: this.options.aceVendorPath,
             toolbarSticky: false
         };
+
+        if (this.options.useLineBreaks) {
+            froalaOptions.enter = $.FroalaEditor.ENTER_BR;
+        }
 
         if (this.options.toolbarButtons) {
             froalaOptions.toolbarButtons = this.options.toolbarButtons.split(',');

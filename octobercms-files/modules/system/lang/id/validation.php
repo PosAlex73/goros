@@ -1,2 +1,101 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | such as the size rules. Feel free to tweak each of these messages.
+    |
+    */
+
+    "accepted"             => "Isian :attribute harus diterima.",
+    "active_url"           => "Isian :attribute bukan URL yang valid.",
+    "after"                => "Isian :attribute harus tanggal setelah :date.",
+    "alpha"                => "Isian :attribute hanya boleh berisi huruf.",
+    "alpha_dash"           => "Isian :attribute hanya boleh berisi huruf, angka, dan strip.",
+    "alpha_num"            => "Isian :attribute hanya boleh berisi huruf dan angka.",
+    "array"                => "Isian :attribute harus berupa sebuah larik (array).",
+    "before"               => "Isian :attribute harus tanggal sebelum :date.",
+    "between"              => [
+        "numeric" => "Isian :attribute harus antara :min dan :max.",
+        "file"    => "Isian :attribute harus antara :min dan :max kilobita.",
+        "string"  => "Isian :attribute harus antara :min dan :max karakter.",
+        "array"   => "Isian :attribute harus antara :min dan :max butir.",
+    ],
+    "boolean"              => "Isian :attribute harus berupa true atau false",
+    "confirmed"            => "Konfirmasi :attribute tidak cocok.",
+    "date"                 => "Isian :attribute bukan tanggal yang valid.",
+    "date_format"          => "Isian :attribute tidak sesuai dengan format :format.",
+    "different"            => "Isian :attribute dan :other harus berbeda.",
+    "digits"               => "Isian :attribute harus berupa angka :digits.",
+    "digits_between"       => "Isian :attribute harus antara angka :min dan :max.",
+    "email"                => "Isian :attribute harus berupa alamat surel yang valid.",
+    "exists"               => "Isian :attribute yang dipilih tidak valid.",
+    "image"                => "Isian :attribute harus berupa gambar.",
+    "in"                   => "Isian :attribute yang dipilih tidak valid.",
+    "integer"              => "Isian :attribute harus merupakan bilangan bulat.",
+    "ip"                   => "Isian :attribute harus berupa alamat IP yang valid.",
+    "max"                  => [
+        "numeric" => "Isian :attribute tidak boleh lebih dari :max.",
+        "file"    => "Isian :attribute tidak boleh lebih dari :max kilobita.",
+        "string"  => "Isian :attribute tidak boleh lebih dari :max karakter.",
+        "array"   => "Isian :attribute tidak boleh lebih dari :max butir.",
+    ],
+    "mimes"                => "Isian :attribute harus berkas berjenis : :values.",
+    "min"                  => [
+        "numeric" => "Isian :attribute minimal :min.",
+        "file"    => "Isian :attribute minimal :min kilobita.",
+        "string"  => "Isian :attribute minimal :min karakter.",
+        "array"   => "Isian :attribute minimal :min butir.",
+    ],
+    "not_in"               => "Isian :attribute yang dipilih tidak valid.",
+    "numeric"              => "Isian :attribute harus berupa angka.",
+    "regex"                => "Format isian :attribute tidak valid.",
+    "required"             => "Bidang isian :attribute wajib diisi.",
+    "required_if"          => "Bidang isian :attribute wajib diisi bila :other adalah :value.",
+    "required_with"        => "Bidang isian :attribute wajib diisi bila terdapat :values.",
+    "required_with_all"    => "Bidang isian :attribute wajib diisi bila terdapat :values.",
+    "required_without"     => "Bidang isian :attribute wajib diisi bila tidak terdapat :values.",
+    "required_without_all" => "Bidang isian :attribute wajib diisi bila tidak terdapat ada :values.",
+    "same"                 => "Isian :attribute dan :other harus sama.",
+    "size"                 => [
+        "numeric" => "Isian :attribute harus berukuran :size.",
+        "file"    => "Isian :attribute harus berukuran :size kilobita.",
+        "string"  => "Isian :attribute harus berukuran :size karakter.",
+        "array"   => "Isian :attribute harus mengandung :size butir.",
+    ],
+    "unique"               => "Isian :attribute sudah ada sebelumnya.",
+    "url"                  => "Format isian :attribute tidak valid.",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

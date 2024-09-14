@@ -1,2 +1,533 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php namespace Cms\Classes;
+
+use Db;
+use App;
+use Lang;
+use Yaml;
+use File;
+use System;
+use Cms\Classes\Theme as CmsTheme;
+use October\Rain\Composer\Manager as ComposerManager;
+use ApplicationException;
+use Exception;
+
+/**
+ * ThemeManager
+ *
+ * @package october\cms
+ * @author Alexey Bobkov, Samuel Georges
+ */
+class ThemeManager
+{
+    /**
+     * @var array installedThemes is for storing installed themes cache
+     */
+    protected $themes;
+
+    /**
+     * @var array installedThemes is for storing installed themes cache
+     */
+    protected $installedThemes;
+
+    /**
+     * @var array installedThemeDirs is for storing installed themes cache
+     */
+    protected $installedThemeDirs;
+
+    /**
+     * instance creates a new instance of this singleton
+     */
+    public static function instance(): static
+    {
+        return App::make('cms.themes');
+    }
+
+    /**
+     * bootAllFrontend
+     */
+    public function bootAllFrontend()
+    {
+        $theme = $this->getActiveTheme();
+        $langPath = $theme->getPath() . '/lang';
+        if (is_dir($langPath)) {
+            Lang::addJsonPath($langPath);
+        }
+
+        if ($parent = $theme->getParentTheme()) {
+            $langPath = $parent->getPath() . '/lang';
+            if (is_dir($langPath)) {
+                Lang::addJsonPath($langPath);
+            }
+        }
+    }
+
+    /**
+     * bootAllBackend will boot language messages for the active theme as `theme.acme::lang.*`
+     */
+    public function bootAllBackend()
+    {
+        $theme = $this->getActiveTheme();
+        $langPath = $theme->getPath() . '/lang';
+        if (is_dir($langPath)) {
+            Lang::addJsonPath($langPath);
+            Lang::addNamespace("theme.{$theme->getId()}", $langPath);
+        }
+
+        if ($parent = $theme->getParentTheme()) {
+            $langPath = $parent->getPath() . '/lang';
+            if (is_dir($langPath)) {
+                Lang::addJsonPath($langPath);
+                Lang::addNamespace("theme.{$parent->getId()}", $langPath);
+            }
+        }
+    }
+
+    /**
+     * getActiveTheme return the active theme without affecting the internal cache
+     * since it may fire before the session driver has loaded.
+     */
+    public function getActiveTheme(): CmsTheme
+    {
+        return CmsTheme::load(CmsTheme::getActiveThemeCode());
+    }
+
+    /**
+     * getThemes returns all themes in the filesystem
+     */
+    public function getThemes(): array
+    {
+        if ($this->themes !== null) {
+            return $this->themes;
+        }
+
+        $result = [];
+        foreach (CmsTheme::all() as $theme) {
+            $dirName = $theme->getDirName();
+            $result[$dirName] = $theme;
+        }
+
+        return $this->themes = $result;
+    }
+
+    /**
+     * getInstalled returns a collection of themes installed
+     *
+     * ['RainLab.Vanilla' => '1.0.0', ...]
+     */
+    public function getInstalled(): array
+    {
+        if ($this->installedThemes !== null) {
+            return $this->installedThemes;
+        }
+
+        $result = [];
+
+        foreach ($this->getThemes() as $dirName => $theme) {
+            // Check composer file
+            if (!$octoberCode = $this->getProductCode($dirName)) {
+                continue;
+            }
+
+            // Check composer matches theme.yaml
+            $publishedCode = $theme->getConfigValue('authorCode') . '.' . $theme->getConfigValue('code');
+            if (strtolower($publishedCode) !== $octoberCode) {
+                continue;
+            }
+
+            // Check version.yaml
+            $result[$publishedCode] = $this->getLatestVersion($dirName);
+        }
+
+        return $this->installedThemes = $result;
+    }
+
+    /**
+     * getInstalled returns a collection of themes installed and their directories
+     *
+     * ['rainlab.vanilla' => 'vanilla', ...]
+     */
+    protected function getInstalledDirectories(): array
+    {
+        if ($this->installedThemeDirs !== null) {
+            return $this->installedThemeDirs;
+        }
+
+        $result = [];
+
+        foreach ($this->getThemes() as $dirName => $theme) {
+            // Check composer file
+            if (!$octoberCode = $this->getProductCode($dirName)) {
+                continue;
+            }
+
+            $result[$octoberCode] = $dirName;
+        }
+
+        return $this->installedThemeDirs = $result;
+    }
+
+    /**
+     * isInstalled checks if a theme has ever been installed
+     */
+    public function isInstalled(string $name): bool
+    {
+        return array_key_exists(strtolower($name), $this->getInstalledDirectories());
+    }
+
+    /**
+     * findDirectoryName from a code
+     */
+    public function findDirectoryName($code): ?string
+    {
+        return $this->getInstalledDirectories()[strtolower($code)] ?? null;
+    }
+
+    /**
+     * findInstalledCode returns an installed theme's code from it's dirname
+     */
+    public function findInstalledCode($dirName): ?string
+    {
+        foreach ($this->getInstalled() as $code => $name) {
+            if ($dirName === $name) {
+                return $code;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * findByIdentifier returns a theme object from a directory name
+     */
+    public function findByIdentifier(string $dirName): ?CmsTheme
+    {
+        if (!CmsTheme::exists($dirName)) {
+            return null;
+        }
+
+        return CmsTheme::load($dirName);
+    }
+
+    /**
+     * getThemePath returns the disk path for the theme
+     */
+    public function getThemePath(string $dirName): string
+    {
+        if (!$theme = $this->findByIdentifier($dirName)) {
+            return '';
+        }
+
+        return $theme->getPath();
+    }
+
+    /**
+     * getProductCode finds the product code for a theme, it relies
+     * on the composer file as the source of truth
+     * author.sometheme
+     */
+    public function getProductCode(string $dirName): string
+    {
+        $name = $this->getComposerCode($dirName);
+
+        $name = System::composerToOctoberCode($name);
+
+        return $name;
+    }
+
+    /**
+     * getComposerCode finds the composer code for a theme
+     * author/sometheme-theme
+     */
+    public function getComposerCode(string $dirName): string
+    {
+        $path = $this->getThemePath($dirName);
+        $file = $path . '/composer.json';
+
+        if (!$path || !File::exists($file)) {
+            return '';
+        }
+
+        $info = json_decode(File::get($file), true);
+
+        return $info['name'] ?? '';
+    }
+
+    /**
+     * getLatestVersion finds the latest version for a theme
+     */
+    public function getLatestVersion(string $dirName): string
+    {
+        $versionHistory = $this->getVersionHistory($dirName);
+
+        $latestVersion = array_key_last($versionHistory);
+
+        if ($latestVersion === null) {
+            return '0.0.0';
+        }
+
+        return (string) $latestVersion;
+    }
+
+    /**
+     * getVersionHistory returns the version history for a theme
+     */
+    public function getVersionHistory(string $dirName): array
+    {
+        $path = $this->getThemePath($dirName);
+
+        if (!File::exists($file = $path . '/version.yaml')) {
+            return [];
+        }
+
+        try {
+            $updates = (array) Yaml::parseFile($file);
+        }
+        catch (Exception $ex) {
+            return [];
+        }
+
+        uksort($updates, function ($a, $b) {
+            return version_compare((string) $b, (string) $a);
+        });
+
+        return $updates;
+    }
+
+    /**
+     * duplicateTheme duplicates a theme
+     */
+    public function duplicateTheme(string $dirName, string $newDirName = null): bool
+    {
+        if (!$dirName) {
+            return false;
+        }
+
+        if (!$newDirName) {
+            $newDirName = $dirName . '-copy';
+        }
+
+        $theme = CmsTheme::load($dirName);
+
+        $sourcePath = $theme->getPath();
+        $destinationPath = themes_path().'/'.$newDirName;
+
+        if (is_dir($destinationPath)) {
+            return false;
+        }
+
+        // Duplicate theme
+        File::copyDirectory($sourcePath, $destinationPath);
+
+        // Unlock theme (if required)
+        $this->performUnlockOnTheme($newDirName);
+
+        $newTheme = CmsTheme::load($newDirName);
+        $newName = $newTheme->getConfigValue('name') . ' - Copy';
+        $newTheme->writeConfig(['name' => $newName]);
+
+        return true;
+    }
+
+    /**
+     * createChildTheme will create a child theme
+     */
+    public function createChildTheme(string $dirName, string $newDirName = null): bool
+    {
+        if (!$newDirName) {
+            $newDirName = $dirName . '-child';
+        }
+
+        $themePath = themes_path($dirName);
+        $childPath = themes_path($newDirName);
+        $childYaml = $childPath . '/theme.yaml';
+
+        // Child already exists
+        if (file_exists($childPath)) {
+            return false;
+        }
+
+        // Create child
+        File::makeDirectory($childPath);
+        File::copy($themePath . '/theme.yaml', $childYaml);
+
+        $yaml = Yaml::parseFile($childYaml);
+        $yaml['parent'] = $dirName;
+        File::put($childYaml, Yaml::render($yaml));
+
+        return true;
+    }
+
+    /**
+     * importDatabaseTemplates
+     */
+    public function importDatabaseTemplates(string $dirName, string $srcDirName = null)
+    {
+        if (!$srcDirName) {
+            $srcDirName = $dirName;
+        }
+
+        $theme = CmsTheme::load($dirName);
+        $themePath = $theme->getPath();
+        if (!$themePath) {
+            return;
+        }
+
+        $templates = Db::table('cms_theme_templates')->where('source', $srcDirName)->get();
+
+        foreach ($templates as $template) {
+            $filePath = $themePath . '/' . $template->path;
+            if ($template->deleted_at) {
+                File::delete($filePath);
+            }
+            else {
+                File::put($filePath, $template->content);
+            }
+        }
+    }
+
+    /**
+     * purgeDatabaseTemplates
+     */
+    public function purgeDatabaseTemplates(string $dirName)
+    {
+        Db::table('cms_theme_templates')->where('source', $dirName)->delete();
+    }
+
+    /**
+     * deleteTheme completely delete a theme from the system
+     */
+    public function deleteTheme(string $theme)
+    {
+        if (!$theme) {
+            return false;
+        }
+
+        $theme = CmsTheme::load($theme);
+        if ($theme->isActiveTheme()) {
+            throw new ApplicationException(__('Cannot delete the active theme, try making another theme active first.'));
+        }
+
+        $theme->removeCustomData();
+
+        // Delete from file system
+        $themePath = $theme->getPath();
+        if (is_dir($themePath)) {
+            File::deleteDirectory($themePath);
+        }
+    }
+
+    /**
+     * findMissingDependencies scans the system plugins to locate any dependencies that
+     * are not currently installed. Returns an array of plugin codes that are needed.
+     *
+     *     ThemeManager::instance()->findMissingDependencies();
+     *
+     * @return array
+     */
+    public function findMissingDependencies(): array
+    {
+        $manager = \System\Classes\PluginManager::instance();
+
+        $missing = [];
+
+        foreach ($this->getThemes() as $theme) {
+            $required = $theme->getConfigValue('require', false);
+            if (!$required || !is_array($required)) {
+                continue;
+            }
+
+            foreach ($required as $require) {
+                if (!$require || $manager->hasPlugin($require)) {
+                    continue;
+                }
+
+                if (!in_array($require, $missing)) {
+                    $missing[] = $require;
+                }
+            }
+        }
+
+        return $missing;
+    }
+
+    /**
+     * findLockableThemes returns themes that are installed via composer
+     */
+    public function findLockableThemes(): array
+    {
+        $packages = ComposerManager::instance()->listAllPackages();
+
+        $themes = [];
+
+        $crossCheckPackage = function(string $composerCode, array $packages): bool {
+            foreach ($packages as $package) {
+                $name = $package['name'] ?? null;
+                if ($name === $composerCode) {
+                    return true;
+                }
+            }
+
+            return false;
+        };
+
+        foreach ($this->getThemes() as $dirName => $theme) {
+            $composerCode = $this->getComposerCode($dirName);
+            if (!$composerCode || !$crossCheckPackage($composerCode, $packages)) {
+                continue;
+            }
+
+            $themes[$composerCode] = $dirName;
+        }
+
+        return $themes;
+    }
+
+    /**
+     * performLockOnTheme will add a lock file on a theme
+     * Returns true if the process was successful
+     */
+    public function performLockOnTheme(string $dirName): bool
+    {
+        $themePath = themes_path($dirName);
+
+        $lockFile = $themePath . '/.themelock';
+        $noLockFile = $themePath . '/.themenolock';
+        if (file_exists($lockFile) || file_exists($noLockFile)) {
+            return false;
+        }
+
+        // Lock theme
+        try {
+            File::put($lockFile, 1);
+        }
+        catch (Exception $ex) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * performUnlockOnTheme will remove the lock file on a theme
+     * Returns true if the process was successful
+     */
+    public function performUnlockOnTheme(string $dirName): bool
+    {
+        $themePath = themes_path($dirName);
+
+        $lockFile = $themePath . '/.themelock';
+        if (!file_exists($lockFile)) {
+            return false;
+        }
+
+        // Unlock theme
+        try {
+            File::delete($lockFile);
+        }
+        catch (Exception $ex) {
+            return false;
+        }
+
+        return true;
+    }
+}

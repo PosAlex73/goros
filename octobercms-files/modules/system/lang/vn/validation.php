@@ -1,2 +1,117 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    'accepted'             => ':attribute phải được chấp nhận.',
+    'active_url'           => ':attribute không phải là URL hợp lệ.',
+    'after'                => ':attribute phải là ngày sau :date.',
+    'after_or_equal'       => ':attribute phải là một ngày sau hoặc bằng ngày :date.',
+    'alpha'                => ':attribute phải là chữ cái.',
+    'alpha_dash'           => ':attribute phải là chữ cái, số hoặc dấu gạch ngang.',
+    'alpha_num'            => ':attribute phải là chữ cái hoặc số.',
+    'array'                => ':attribute phải là mảng.',
+    'before'               => ':attribute phải là ngày trước ngày :date.',
+    'before_or_equal'      => ':attribute phải là một ngày trước hoặc bằng với ngày :date.',
+    'between'              => [
+        'numeric' => ':attribute phải lớn hơn :min và nhỏ hơn :max.',
+        'file'    => ':attribute  phải lớn hơn :min và nhỏ hơn :max kilobytes.',
+        'string'  => ':attribute phải lớn hơn :min và nhỏ hơn :max kí tự.',
+        'array'   => ':attribute phải lớn hơn :min và nhỏ hơn :max items.',
+    ],
+    'boolean'              => 'Trường :attribute phải là giá trị đúng hoặc sai.',
+    'confirmed'            => ':attribute không chính xác.',
+    'date'                 => ':attribute không phải là ngày.',
+    'date_format'          => ':attribute không đúng định dạng với :format.',
+    'different'            => ':attribute phải khác :other.',
+    'digits'               => ':attribute phải có :digits chữ số.',
+    'digits_between'       => ':attribute phải lớn hơn :min và nhỏ hơn :max chữ số.',
+    'dimensions'           => ':attribute kích thước không hợp lệ.',
+    'distinct'             => 'Trường :attribute bị trùng giá trị.',
+    'email'                => ':attribute phải là một email hợp lệ.',
+    'exists'               => 'Mục đã chọn :attribute không hợp lệ.',
+    'file'                 => ':attribute phải là tệp tin.',
+    'filled'               => 'Trường :attribute không được để trống.',
+    'image'                => ':attribute phải là hình ảnh.',
+    'in'                   => 'Mục đã chọn :attribute không hợp lệ.',
+    'in_array'             => 'Trường :attribute không tồn tại trong :other.',
+    'integer'              => ':attribute phải là một số nguyên.',
+    'ip'                   => ':attribute phải là một địa chỉ IP hợp lệ.',
+    'ipv4'                 => ':attribute phải là địa chỉ IPv4 hợp lệ.',
+    'ipv6'                 => ':attribute phải là địa chỉ IPv6 hợp lệ.',
+    'json'                 => ':attribute phải là chuỗi JSON hợp lệ.',
+    'max'                  => [
+        'numeric' => ':attribute không được lơn hơn :max.',
+        'file'    => ':attribute không được lơn hơn :max kilobytes.',
+        'string'  => ':attribute không được lơn hơn :max kí tự.',
+        'array'   => ':attribute không được lơn hơn :max items.',
+    ],
+    'mimes'                => 'Loại file của :attribute phải là: :values.',
+    'mimetypes'            => 'Loại file của :attribute phải là: :values.',
+    'min'                  => [
+        'numeric' => ':attribute phải lớn hơn :min.',
+        'file'    => ':attribute phải lớn hơn :min kilobytes.',
+        'string'  => ':attribute phải nhiều hơn :min kí tự.',
+        'array'   => ':attribute phải có nhiều hơn :min item.',
+    ],
+    'not_in'               => 'Mục đã chọn :attribute không hợp lệ.',
+    'numeric'              => ':attribute phải là số.',
+    'present'              => 'Phải có trường :attribute.',
+    'regex'                => 'Định dạng của :attribute không hợp lệ.',
+    'required'             => 'Trường :attribute là bắt buộc.',
+    'required_if'          => 'Trường :attribute là bắt buộc khi :other là :value.',
+    'required_unless'      => 'Trường :attribute là bắt buộc trừ khi :other là :values.',
+    'required_with'        => 'Trường :attribute là bắt buộc khi có :values.',
+    'required_with_all'    => 'Trường :attribute là bắt buộc khi có :values.',
+    'required_without'     => 'Trường :attribute là bắt buộc khi không có :values.',
+    'required_without_all' => 'Trường :attribute là bắt buộc khi không có :values.',
+    'same'                 => ':attribute phải trùng khớp với :other.',
+    'size'                 => [
+        'numeric' => ':attribute phải có kích thước :size.',
+        'file'    => ':attribute phải có kích thước :size kilobytes.',
+        'string'  => ':attribute phải có :size kí tự.',
+        'array'   => ':attribute phải có :size items.',
+    ],
+    'string'               => ':attribute phải là chuỗi.',
+    'timezone'             => ':attribute phải là múi là hợp lệ.',
+    'unique'               => ':attribute đã tồn tại.',
+    'uploaded'             => ':attribute bị lỗi khi tải lên.',
+    'url'                  => ':attribute sai định dạng.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+
+];

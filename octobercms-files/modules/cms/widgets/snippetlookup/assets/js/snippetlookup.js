@@ -16,9 +16,8 @@ oc.Modules.register('cms.widget.snippetlookup', function () {
 
             // Queue for the next control found in the popup
             addEventListener('snippetlookup:ready', function(ev) {
-                const searchControl = oc.fetchControl(ev.target);
-                if (searchControl) {
-                    searchControl.setContext(config.onInsert);
+                if (ev.target.snippetLookupInstance) {
+                    ev.target.snippetLookupInstance.setContext(config.onInsert);
                 }
             }, { once: true });
         }
@@ -26,18 +25,21 @@ oc.Modules.register('cms.widget.snippetlookup', function () {
         static generateSnippetHtml(snippet) {
             let snippetCode = snippet.snippet,
                 componentClass = snippet.componentClass,
-                noAjax = snippet.useAjax === 'false';
+                useAjax = snippet.useAjax === 'true';
 
             var template = [];
-            template.push('<figure data-snippet="'+snippetCode+'"');
 
             if (componentClass) {
                 snippetCode = this._generateUniqueComponentSnippetCode(snippetCode);
+                template.push('<figure data-snippet="'+snippetCode+'"');
                 template.push(' data-component="'+componentClass+'"');
             }
+            else {
+                template.push('<figure data-snippet="'+snippetCode+'"');
+            }
 
-            if (noAjax) {
-                template.push(' data-ajax="false"');
+            if (useAjax) {
+                template.push(' data-ajax="true"');
             }
 
             template.push('>&nbsp;</figure>');

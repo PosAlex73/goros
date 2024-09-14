@@ -1,2 +1,110 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | such as the size rules. Feel free to tweak each of these messages.
+    |
+    */
+
+    "accepted"             => ":attributeを承認してください。",
+    "active_url"           => ":attributeは、有効なURLではありません。",
+    "after"                => ":attributeには、:date以降の日付を指定してください。",
+    "alpha"                => ":attributeには、アルファベッドのみ使用できます。",
+    "alpha_dash"           => ":attributeには、英数字('A-Z','a-z','0-9')とハイフンと下線('-','_')が使用できます。",
+    "alpha_num"            => ":attributeには、英数字('A-Z','a-z','0-9')が使用できます。",
+    "array"                => ":attributeには、配列を指定してください。",
+    "before"               => ":attributeには、:date以前の日付を指定してください。",
+    "between"              => [
+        "numeric" => ":attributeには、:minから、:maxまでの数字を指定してください。",
+        "file"    => ":attributeには、:min KBから:max KBまでのサイズのファイルを指定してください。",
+        "string"  => ":attributeは、:min文字から:max文字にしてください。",
+        "array"   => ":attributeの項目は、:min個から:max個にしてください。",
+    ],
+    "boolean"              => ":attributeには、'true'か'false'を指定してください。",
+    "confirmed"            => ":attributeと:attribute確認が一致しません。",
+    "date"                 => ":attributeは、正しい日付ではありません。",
+    "date_format"          => ":attributeの形式は、':format'と合いません。",
+    "different"            => ":attributeと:otherには、異なるものを指定してください。",
+    "digits"               => ":attributeは、:digits桁にしてください。",
+    "digits_between"       => ":attributeは、:min桁から:max桁にしてください。",
+    "email"                => ":attributeは、有効なメールアドレス形式で指定してください。",
+    "exists"               => "選択された:attributeは、有効ではありません。",
+    "image"                => ":attributeには、画像を指定してください。",
+    "in"                   => "選択された:attributeは、有効ではありません。",
+    "integer"              => ":attributeには、整数を指定してください。",
+    "ip"                   => ":attributeには、有効なIPアドレスを指定してください。",
+    "max"                  => [
+        "numeric" => ":attributeには、:max以下の数字を指定してください。",
+        "file"    => ":attributeには、:max KB以下のファイルを指定してください。",
+        "string"  => ":attributeは、:max文字以下にしてください。",
+        "array"   => ":attributeの項目は、:max個以下にしてください。",
+    ],
+    "mimes"                => ":attributeには、:valuesタイプのファイルを指定してください。",
+    "min"                  => [
+        "numeric" => ":attributeには、:min以上の数字を指定してください。",
+        "file"    => ":attributeには、:min KB以上のファイルを指定してください。",
+        "string"  => ":attributeは、:min文字以上にしてください。",
+        "array"   => ":attributeの項目は、:max個以上にしてください。",
+    ],
+    "not_in"               => "選択された:attributeは、有効ではありません。",
+    "numeric"              => ":attributeには、数字を指定してください。",
+    "regex"                => ":attributeには、有効な正規表現を指定してください。",
+    "required"             => ":attributeは、必ず指定してください。",
+    "required_if"          => ":otherが:valueの場合、:attributeを指定してください",
+    "required_with"        => ":valuesが指定されている場合、:attributeも指定してください。",
+    "required_with_all"    => ":valuesが全て指定されている場合、:attributeも指定してください。",
+    "required_without"     => ":valuesが指定されていない場合、:attributeを指定してください。",
+    "required_without_all" => ":valuesが全て指定されていない場合、:attributeを指定してください。",
+    "same"                 => ":attributeと:otherが一致しません。",
+    "size"                 => [
+        "numeric" => ":attributeには、:sizeを指定してください。",
+        "file"    => ":attributeには、:size KBのファイルを指定してください。",
+        "string"  => ":attributeは、:size文字にしてください。",
+        "array"   => ":attributeの項目は、:size個にしてください。",
+    ],
+    "unique"               => "指定の:attributeは既に使用されています。",
+    "url"                  => ":attributeは、有効なURL形式で指定してください。",
+    "timezone"             => ":attributeには、有効なタイムゾーンを指定してください。",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [
+        'phone.regex' => '電話番号の形式が正しくありません。',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [
+        'name'    => '名前',
+        'email'   => 'メールアドレス',
+        'phone'   => '電話番号',
+        'subject' => 'お申し込み・お問い合わせ内容',
+        'body'    => 'メッセージ',
+    ],
+
+];

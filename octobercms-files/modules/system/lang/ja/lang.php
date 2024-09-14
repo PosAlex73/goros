@@ -1,2 +1,125 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php return [
+  'app' => [
+    'name' => 'October CMS',
+    'tagline' => '基本に戻ろう！',
+  ],
+  'directory' => [
+    'create_fail' => 'ディレクトリ\':name\'を作成できません。',
+  ],
+  'file' => [
+    'create_fail' => 'ファイル\':name\'を作成できません。',
+  ],
+  'combiner' => [],
+  'system' => [
+    'name' => 'システム',
+    'menu_label' => 'システム',
+    'categories' => [
+      'cms' => 'CMS',
+      'misc' => 'その他',
+      'logs' => 'ログ',
+      'mail' => 'メール',
+      'shop' => 'ショップ',
+      'team' => 'チーム',
+      'users' => 'ユーザー',
+      'system' => 'システム',
+      'social' => 'ソーシャル',
+      'events' => 'イベント',
+      'customers' => 'カスタマー',
+      'my_settings' => 'マイ設定',
+    ],
+  ],
+  'plugin' => [
+    'unnamed' => '名前なしプラグイン',
+    'name' => [],
+  ],
+  'plugins' => [
+    'enable_or_disable' => '有効化・無効化',
+    'enable_or_disable_title' => 'プラグインの有効化・無効化',
+    'remove' => '削除',
+    'refresh' => '更新',
+    'disabled_label' => '無効にする',
+    'disabled_help' => 'プラグインを無効にすると、アプリケーションから参照されなくなります。',
+    'selected_amount' => 'プラグインを:amount個選択',
+    'remove_confirm' => '削除していいですか？',
+    'remove_success' => 'システムからプラグインを削除しました。',
+    'refresh_success' => 'システム内のプラグインを更新しました。',
+    'disable_confirm' => '無効にしていいですか？',
+    'disable_success' => 'プラグインを無効にしました。',
+    'enable_success' => 'プラグインを有効にしました。',
+  ],
+  'project' => [
+    'attach' => 'プロジェクト追加',
+    'detach' => 'プロジェクト切り離し',
+    'none' => '無し',
+    'id' => [
+      'missing' => '使用するプロジェクトのIDを指定してください。',
+    ],
+    'detach_confirm' => 'このプロジェクトを切り離しますか？',
+    'unbind_success' => 'プロジェクトを切り離しました。',
+  ],
+  'settings' => [
+    'search' => '検索',
+  ],
+  'mail' => [
+    'smtp_ssl' => 'SSL接続が必要',
+  ],
+  'mail_templates' => [
+    'name_comment' => 'システム内で一意な名前をつけてください。',
+    'test_send' => 'テストメッセージを送信する',
+    'return' => 'テンプレートリストに戻る',
+  ],
+  'install' => [],
+  'updates' => [
+    'plugin_author' => '作者',
+    'plugin_not_found' => 'Plugin not found',
+    'core_build' => 'ビルド :build',
+    'core_build_help' => '新しいビルドが存在します。',
+    'plugin_version_none' => '新プラグイン',
+    'theme_new_install' => '新しいテーマのインストール',
+    'theme_extracting' => 'テーマ \':name\' を展開しています',
+    'update_label' => 'ソフトウェアアップデート',
+    'update_loading' => 'アップデートロード中…',
+    'force_label' => '強制アップデート',
+    'found' => [
+      'label' => '新しいアップデートあり',
+      'help' => 'アップデートしたいソフトウェアをクリックしてください。',
+    ],
+    'none' => [
+      'label' => 'アップデートなし',
+      'help' => '新しいアップデートが見つかりません。',
+    ],
+  ],
+  'server' => [
+    'connect_error' => 'サーバー接続エラー。',
+    'response_not_found' => '更新サーバーが見つかりません。',
+    'response_invalid' => 'サーバーからの無効なレスポンス。',
+    'response_empty' => 'サーバーから空のレスポンス。',
+    'file_error' => 'サーバーがパッケージ配布に失敗。',
+    'file_corrupt' => 'サーバーからのファイルが壊れています。',
+  ],
+  'behavior' => [
+    'missing_property' => ':class クラスは、 :behavior ビヘイビアーにより使用される、 :property プロパティーを定義する必要があります。',
+  ],
+  'config' => [
+    'not_found' => ':location で、 :file 設定ファイルが見つかりません。',
+    'required' => ':location　の中の設定で、値の指定が必要な、 :property が見つかりません。',
+  ],
+  'zip' => [
+    'extract_failed' => 'コアファイル： \':file\' が取り出せません。',
+  ],
+  'event_log' => [],
+  'request_log' => [
+    'empty_link' => 'リクエストログを空にする',
+    'empty_loading' => 'リクエストログを空にしています...',
+    'empty_success' => 'リクエストログを空にしました。',
+    'return_link' => 'リクエストログに戻る',
+    'id' => 'ID',
+  ],
+  'permissions' => [
+    'name' => 'システム',
+    'manage_system_settings' => 'システム設定の管理',
+    'manage_software_updates' => 'ソフトウェアアップデートの管理',
+    'manage_mail_templates' => 'メールテンプレートの管理',
+    'manage_other_administrators' => '他のアドミニストレーターの管理',
+  ],
+];

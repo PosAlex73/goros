@@ -1,2 +1,238 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php namespace System\Models;
+
+use App;
+use Site;
+use Event;
+use Config;
+use System\Models\SettingModel;
+
+/**
+ * MailSetting model
+ *
+ * @package october\system
+ * @author Alexey Bobkov, Samuel Georges
+ */
+class MailSetting extends SettingModel
+{
+    use \October\Rain\Database\Traits\Multisite;
+    use \October\Rain\Database\Traits\Validation;
+
+    const MODE_LOG = 'log';
+    const MODE_SENDMAIL = 'sendmail';
+    const MODE_SMTP = 'smtp';
+    const MODE_MAILGUN = 'mailgun';
+    const MODE_SES = 'ses';
+    const MODE_POSTMARK = 'postmark';
+
+    /**
+     * @var string settingsCode is a unique code for these settings
+     */
+    public $settingsCode = 'system_mail_settings';
+
+    /**
+     * @var mixed settingsFields definitions
+     */
+    public $settingsFields = 'fields.yaml';
+
+    /**
+     * @var array propagatable fields
+     */
+    protected $propagatable = [
+        'sendmail_path',
+        'smtp_address',
+        'smtp_port',
+        'smtp_user',
+        'smtp_password',
+        'smtp_authorization',
+        'smtp_encryption',
+        'mailgun_domain',
+        'mailgun_secret',
+        'ses_key',
+        'ses_secret',
+        'ses_region',
+        'postmark_token',
+    ];
+
+    /**
+     * @var array rules for validation
+     */
+    public $rules = [
+        'sender_name'  => 'required',
+        'sender_email' => 'required|email'
+    ];
+
+    /**
+     * initSettingsData for this model. This only executes when the
+     * model is first created or reset to default.
+     * @return void
+     */
+    public function initSettingsData()
+    {
+        $config = App::make('config');
+        $this->send_mode = $config->get('mail.default', static::MODE_LOG);
+        $this->sender_name = $config->get('mail.from.name', 'Your Site');
+        $this->sender_email = $config->get('mail.from.address', 'admin@domain.tld');
+        $this->sendmail_path = $config->get('mail.mailers.sendmail.path', '/usr/sbin/sendmail');
+        $this->smtp_address = $config->get('mail.mailers.smtp.host');
+        $this->smtp_port = $config->get('mail.mailers.smtp.port', 587);
+        $this->smtp_user = $config->get('mail.mailers.smtp.username');
+        $this->smtp_password = $config->get('mail.mailers.smtp.password');
+        $this->smtp_authorization = !!strlen($this->smtp_user);
+        $this->smtp_encryption = $config->get('mail.mailers.smtp.encryption');
+        $this->mailgun_domain = $config->get('services.mailgun.domain');
+        $this->mailgun_secret = $config->get('services.mailgun.secret');
+        $this->ses_key = $config->get('services.ses.key');
+        $this->ses_secret = $config->get('services.ses.secret');
+        $this->ses_region = $config->get('services.ses.region');
+        $this->postmark_token = $config->get('services.postmark.secret');
+    }
+
+    /**
+     * getSendModeOptions
+     */
+    public function getSendModeOptions()
+    {
+        $options =  (array) Config::get('mail.send_mode_options', [
+            static::MODE_LOG => "Log File",
+            static::MODE_SENDMAIL => "Sendmail",
+            static::MODE_SMTP => "SMTP",
+            static::MODE_MAILGUN => "Mailgun",
+            static::MODE_SES => "SES",
+            static::MODE_POSTMARK => "Postmark",
+        ]);
+
+        /**
+         * @event system.mail.getSendModeOptions
+         * Add or remove mailer send mode options.
+         *
+         * The format of the $options variable can be found in
+         * System\Models\MailSetting::getSendModeOptions()
+         *
+         * Example usage:
+         *
+         *     Event::listen('system.mail.getSendModeOptions', function(&$options) {
+         *         $options['mydriver'] = 'My Driver';
+         *     });
+         *
+         */
+        Event::fire('system.mail.getSendModeOptions', [&$options]);
+
+        return $options;
+    }
+
+    /**
+     * enableMultisiteMailer uses a just-in-time mail driver to handle mail configuration
+     * for multiple site definitions. A new driver is needed due to the Laravel internals
+     * caching most of the configuration after resolving.
+     */
+    public static function enableMultisiteMailer()
+    {
+        Event::listen('mailer.buildQueueMailable', function ($mailer, $mailable) {
+            $mailable->forceMailer('x_site_mailer_' . Site::getSiteIdFromContext());
+        });
+
+        Event::listen('mailer.beforeResolve', function ($mailer, $name) {
+            if (!str_starts_with($name, 'x_site_mailer_')) {
+                return;
+            }
+
+            // Assuming site context is applied
+            if (static::isConfigured()) {
+                static::applyConfigValues();
+            }
+
+            // Set the unique mailer just in time
+            if ($activeMailer = Config::get('mail.default')) {
+                Config::set("mail.mailers.{$name}", Config::get("mail.mailers.{$activeMailer}"));
+            }
+        });
+    }
+
+    /**
+     * applyConfigValues
+     */
+    public static function applyConfigValues()
+    {
+        $config = App::make('config');
+        $settings = self::instance();
+        $config->set('mail.default', $settings->send_mode);
+        $config->set('mail.from.name', $settings->sender_name);
+        $config->set('mail.from.address', $settings->sender_email);
+
+        switch ($settings->send_mode) {
+            case self::MODE_SMTP:
+                $config->set('mail.mailers.smtp.host', $settings->smtp_address);
+                $config->set('mail.mailers.smtp.port', $settings->smtp_port);
+                if ($settings->smtp_authorization) {
+                    $config->set('mail.mailers.smtp.username', $settings->smtp_user);
+                    $config->set('mail.mailers.smtp.password', $settings->smtp_password);
+                }
+                else {
+                    $config->set('mail.mailers.smtp.username', null);
+                    $config->set('mail.mailers.smtp.password', null);
+                }
+                if ($settings->smtp_encryption) {
+                    $config->set('mail.mailers.smtp.encryption', $settings->smtp_encryption);
+                }
+                else {
+                    $config->set('mail.mailers.smtp.encryption', null);
+                }
+                break;
+
+            case self::MODE_SENDMAIL:
+                $config->set('mail.mailers.sendmail.path', $settings->sendmail_path);
+                break;
+
+            case self::MODE_MAILGUN:
+                $config->set('services.mailgun.domain', $settings->mailgun_domain);
+                $config->set('services.mailgun.secret', $settings->mailgun_secret);
+                break;
+
+            case self::MODE_SES:
+                $config->set('services.ses.key', $settings->ses_key);
+                $config->set('services.ses.secret', $settings->ses_secret);
+                $config->set('services.ses.region', $settings->ses_region);
+                break;
+
+            case self::MODE_POSTMARK:
+                $config->set('services.postmark.token', $settings->postmark_token);
+                break;
+        }
+
+        /**
+         * @event system.mail.applyConfigValues
+         * Applies configuration values from mail settings
+         *
+         * Example usage:
+         *
+         *     Event::listen('system.mail.applyConfigValues', function($settings) {
+         *         if ($settings->send_mode === 'mydriver') {
+         *             Config::set('services.mydriver.secret', $settings->mydriver_secret);
+         *         }
+         *     });
+         *
+         */
+        Event::fire('system.mail.applyConfigValues', [$settings]);
+    }
+
+    /**
+     * getSmtpEncryptionOptions values
+     * @return array
+     */
+    public function getSmtpEncryptionOptions()
+    {
+        return [
+            '' => "No encryption",
+            'tls' => "TLS",
+        ];
+    }
+
+    /**
+     * isMultisiteEnabled allows for programmatic toggling
+     * @return bool
+     */
+    public function isMultisiteEnabled()
+    {
+        return Site::hasFeature('backend_mail_setting');
+    }
+}

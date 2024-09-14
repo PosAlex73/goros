@@ -1,2 +1,142 @@
 <?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('8C2F18EFC7C5058DAAQAAAAXAAAABHAAAACABAAAAAAAAAD/61kg8tNxGafxAqgAW2KSrpM31EV/lpjtBV/DpsVLwoFOQoEWNqbPkZao6ZCs7KYcH2XjJW9YCopNeyOiZ7pXfMBySpnZulag9cOdd0bWtJ3YkdGYo85V85Lh+2VPupAnefFHDAYzyGvMmUAhcWAjOlEAAAAICQAAPy8zQ7lfE18/HdfT8/v4lTmrMMym3oB69Qfp3ezwexOb8GGrVX9+2wWl/cN+97W5StA3XFbDG5RMO1CuXMpjeJUs2hhA2+kFvPBoudwjf6NSXlxV+8NpiPVEqXU3lowI402YtwaUNumBbdc1RNx8mab67qxcvq9GMwaNY/uoBwJCB2RBODD42Av/I88ApukqwvBUtoj8vMgHjQzHdLmGRIu0//WfuWWkzWrk+IEkWczpJsDbYt1x81zMhSE92x8A693IN0KKvii+6mZAAAJlooywvG12xmL60AzUmBkzm/m/QHHRg7G/EhuOiamrlM85m5uER4Em78YMQGTRAUBxd+17MYrfYW58AVbtFUTi+qhm+Dn1wg0h9xKRwk77BLY7+DHlSuYEpBAW9LjBkGTxSAM2RTyCo/5QwzSojG2cIf3dM7ordfzrQ9YkqC8NbXgoTHc+NrwZBd0GcxNnc1o61FJGMs0xn0q/e1J0DVk2oyJYquGJQE1No+AllSolNRE5/rOyyKvVQlhVnW7ZqJAuao8an63n7CRSMJuLaqSphw8HV0XEOaqa0kZqiD/Z+IQHshzIefOWN9uRFj17BtyzCJv1XN5ZEQlFDj6p43kfLKb6cDXmp+ZsjItZTdT/9qKuPgPV83Fv6IGe4jKVcn0Ois7RaKyw6p/xWqkC8wx+4gbOe/GxFWusjxvjkA8FAgivmyiFzL1slh+ZKcFRuBGcejwyVsbwJi0bi2TkePS+cMIXOJZAe3ZBTDeFMJnovFZr4hWCFG06Ifj3LWATPzmIk4zbhh8vG42O1hJ6UUHki/EIHiMz8TlIRIfqbTJDvAF54LYP+bNRZlJW8Z32+0Yci+H1ziP45PmKjQgEISw1ALZFDGcG6y00s2pMsqv3P8+cOto1co/wGDaQMcWL4GGje7wKiD0VoyPzQGHYZetgTguJvECYMEkGTjFCXLo/1bLisdco8i6zRZ1IJUbk8I/bhYi2+BVQdUItt2+TFxJ9pRjV9/pdZ3JHlynY5/OrX0CJ+acP3rQ9Bx4Mo+Hzsg/ptR6uXOAPmBJKXSFWwWxjJ/R75eDoepvK+YRsj9Gbl0kCFfh8YTmdYOwQueY1+WG/O5nS8zZL9IgUd4jwgDs1mmVptaUfow7iwoyqif2bJLZz5hQZsLqZHxL66/I5IHoSIa51UWjYTi0G8IqZUQZJbn0BzjC+c1unPYJPeVkVlliVLFMbD12gwoqHA0mGZ2pyhopOylCAm5Bb4IKPK6G5apEPaaUQ6kJZCpCwWddrsG15c/7YtNNsgVOVT8AVyypNMltpVPyIeCM3bk08EReiqvGHfYjLoFv42Hrmx2Hy8af8TqRXgerJC29tzikAtKmxqO9iNhnJ8Js5FDRdZ697AWYoAGb4I5+F+GJxqH4S9diYU9xUzu8qs940SBlZMVRni1ZKU2JuweiqSOyMdZNTU/Pmyj2e3HPwCdYkLlHvTnCvqh2lZRUHrCy3dR7x9CTop7c1sHueJMqVpPIH9idtb5M9iaxrSYWdTuN3qGQgckOuAZ7ArtzzZjLoBENoKFkxbil19sXWHJpavTDe5Pt+Sgia3K97Bb/Gq07zqTxcTD/6RQfeCx03iDAUL2XlpSpczyrHLRwKxRwaUKj5j0Sm0Trl9PAe6Wi7tDsqtAavgZDTA/EH1tUsBYYF5YqS95nAyUjUadY1mVzUsbq9PG8BVzzF7g34G1wvJKgLTW8K1jgGPIcAC5FBvF/Vqoon+s38HMsLcHTHnwcv5pvIlg/EAuQOYBJ1ozxcm523OF1atRpVNeageOVaj/x9mPPf+BKD/YHFtArUy00SXEzBrN0e/eFuTqcuUs7pLGWFwyBjZK7YLlpzBG3gm1RTSC6PlJXkJCUGhNeMf1UMZljfESzE9DLYaGXHgbA2jU3tCRnHB6eXvLZfA0LA55HyobNnvy3gwKXYIvavriNYDYOoVcaWvDaCLpyyLSoxsWPtHUwWEU3q1sx31DEPJX4W9GgY5q9IJzN0NwORnz5G/8ut9pZSXjTVWHJvalxjNmWSTW/0cK0CTezH34DFqfC5dLv+htE6Fuvn19xSws17Wi7JMbQlYr0CIm0Y9QnLfxm+0VP1rNwLkaL8Ey/sTzDmCutla0qDXwdXKikZmRGRR01H/U6GVRd1Kqx5e9/xTfQJU817GzFdcSeGC2X/ktx1dK20FLPazYKHuHqTY8Wz+OWGu/lx1MP7+g83IaRDIIRiqBQMNGtg4OCURfnCKcQPfwKqLUJIS2Uf0TzsPwooRpnEw7PyaJMVL7NYiduNkCkTxXwB6NA2MlQFFCVhg6j3Euuy+2m6qnWDh4V1IcWh/7LYLtxhRFHD5iM+UTUMd9J0qy8dheEusD/kNceRLUnazpv9nxkbs8cFCS1gwsQ4OqVKQSJALGNuqRf1lVhYVQDyYz/jZhIvyh1V6kUt/+iux1VVtiGWmI4l1sjyy6ldzOcCnWBz/8k8b9sU8gUk/pVQW6B53gavb/6XEwpdPvIAq1LuG2bFB9H3SyxZ1JHlyDITEO/ZoXR7IOVP7kjahh1AlRrDGLddKno+H1AttGdc7F9FuXriNNU7tq6HGRkD7NvT89kjhLXi6KroZ5Ai5ObzgwBRRyOSz9ykEWM+rVlrvLQBvvpFo0hcaObudceVn5OSf//T8BZzH5QaGX3OlFrr7ZE6Spf3gv41vZoMQDFOzXnl/OZcW+yjd/yzry6DlJXR1ROGcq/4po4JBNr8rBA0MruUIEV7EHld40Aiqaoj18/I6QtLqaYmk/f+fiSy7QwFSTRbMOhzJhsqnmQ8oHLXORIDLzFR3exiLrX0q7qsRVqeH1D6EemlqcUmhMykgUlFAv1K/AUQo/KYL8HG0XDT0C5boYNHrUceTnK2Nu0IZAYEG7ji8AMadhGzWmydwdtV9Ql2IM/upBRHgX4Uvt2ypZ4J13sAsHLURiz8b5kSCaliwuFhVs1gySPIBeFshUOXKFnzfh9lYhZeY3d63h9KVGXqFpWJLhwKF32w3x7ywwpmrm/KRaHleqTASWypkNUh/U/xVi/4KkyWb5cuTeasmnGQVM13HkIuL7Was8cAAAAA');
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    'accepted'             => ':attribute musí byť akceptovaný.',
+    'active_url'           => ':attribute má neplatnú URL adresu.',
+    'after'                => ':attribute musí byť dátum po :date.',
+    'alpha'                => ':attribute môže obsahovať len písmená.',
+    'alpha_dash'           => ':attribute môže obsahovať len písmená, čísla a pomlčky.',
+    'alpha_num'            => ':attribute môže obsahovať len písmená, čísla.',
+    'array'                => ':attribute musí byť pole.',
+    'before'               => ':attribute musí byť dátum pred :date.',
+    'before_or_equal'      => ':attribute musí byť dátum pred alebo rovný :date.',
+    'between'              => [
+        'numeric' => ':attribute musí mať rozsah :min - :max.',
+        'file'    => ':attribute musí mať rozsah :min - :max kilobajtov.',
+        'string'  => ':attribute musí mať rozsah :min - :max znakov.',
+        'array'   => ':attribute musí mať rozsah :min - :max prvkov.',
+    ],
+    'boolean'              => ':attribute musí byť true alebo false.',
+    'confirmed'            => ':attribute konfirmácia sa nezhoduje.',
+    'date'                 => ':attribute má neplatný dátum.',
+    'date_format'          => ':attribute sa nezhoduje s formátom :format.',
+    'different'            => ':attribute a :other musia byť odlišné.',
+    'digits'               => ':attribute musí mať :digits číslic.',
+    'digits_between'       => ':attribute musí mať rozsah :min až :max číslic.',
+    'dimensions'           => ':attribute má neplatné rozmery obrázka.',
+    'distinct'             => ':attribute má duplicitné hodnoty.',
+    'email'                => ':attribute má neplatný formát.',
+    'exists'               => 'Označený :attribute je neplatný.',
+    'file'                 => ':attribute musí byť súbor.',
+    'filled'               => ':attribute je povinný.',
+    'gt'                   => [
+        'numeric' => ':attribute musí byť väčšia ako :value.',
+        'file'    => ':attribute musí byť väčšia ako :value kilobajtov.',
+        'string'  => ':attribute musí byť väčšia ako :value znakov.',
+        'array'   => ':attribute musí mať viac ako :value položiek.',
+    ],
+    'gte'                  => [
+        'numeric' => ':attribute musí byť väčšia alebo rovná :value.',
+        'file'    => ':attribute musí byť väčšia alebo rovná :value kilobajtov.',
+        'string'  => ':attribute musí byť väčšia alebo rovná :value znakov.',
+        'array'   => ':attribute musí mať :value položiek alebo viac.',
+    ],
+    'image'                => ':attribute musí byť obrázok.',
+    'in'                   => 'Označený :attribute je neplatný.',
+    'in_array'             => ':attribute pole neexistuje v :other.',
+    'integer'              => ':attribute musí byť celé číslo.',
+    'ip'                   => ':attribute musí byť platná IP adresa.',
+    'ipv4'                 => ':attribute musí byť platná IPv4 adresa.',
+    'ipv6'                 => ':attribute musí byť platná IPv6 adresa.',
+    'json'                 => ':attribute musí byť platný JSON.',
+    'lt'                   => [
+        'numeric' => ':attribute musí byť menšia ako :value.',
+        'file'    => ':attribute musí byť menšia ako :value kilobajtov.',
+        'string'  => ':attribute musí byť menšia ako :value znakov.',
+        'array'   => ':attribute musí mať menej ako :value položiek.',
+    ],
+    'lte'                  => [
+        'numeric' => ':attribute musí byť menšie alebo rovné :value.',
+        'file'    => ':attribute musí byť menšie alebo rovné :value kilobajtov.',
+        'string'  => ':attribute musí byť menšie alebo rovné :value znakov.',
+        'array'   => ':attribute nesmie mať viac ako :value položiek.',
+    ],
+    'max'                  => [
+        'numeric' => ':attribute nemôže byť väčší ako :max.',
+        'file'    => ':attribute nemôže byť väčší ako :max kilobajtov.',
+        'string'  => ':attribute nemôže byť väčší ako :max znakov.',
+        'array'   => ':attribute nemôže mať viac ako :max prvkov.',
+    ],
+    'mimes'                => ':attribute musí byť súbor s koncovkou: :values.',
+    'extensions'           => ':attribute musí mäť niektorú z nasledujúcich prípon: :values.',
+    'min'                  => [
+        'numeric' => ':attribute musí mať aspoň :min.',
+        'file'    => ':attribute musí mať aspoň :min kilobajtov.',
+        'string'  => ':attribute musí mať aspoň :min znakov.',
+        'array'   => ':attribute musí mať aspoň :min prvkov.',
+    ],
+    'not_in'               => 'Označený :attribute je neplatný.',
+    'not_regex'            => ':attribute má neplatný formát.',
+    'numeric'              => ':attribute musí byť číslo.',
+    'present'              => ':attribute pole musí byť prítomné.',
+    'regex'                => ':attribute má neplatný formát.',
+    'required'             => ':attribute je požadované.',
+    'required_if'          => ':attribute je požadované keď :other je :value.',
+    'required_unless'      => ':attribute pole je povinné, pokiaľ :other je v :values.',
+    'required_with'        => ':attribute je požadované keď :values je prítomné.',
+    'required_with_all'    => ':attribute pole je povinné, keď je :values.',
+    'required_without'     => ':attribute je požadované keď :values nie je prítomné.',
+    'required_without_all' => ':attribute pole je povinné, keď nie je prítomná žiadna z :values.',
+    'same'                 => ':attribute a :other sa musia zhodovať.',
+    'size'                 => [
+        'numeric' => ':attribute musí byť :size.',
+        'file'    => ':attribute musí mať :size kilobajtov.',
+        'string'  => ':attribute musí mať :size znakov.',
+        'array'   => ':attribute musí obsahovať :size prvkov.',
+    ],
+    'starts_with'          => ':attribute musí začínať jedným z nasledujúcich: :values.',
+    'string'               => ':attribute musí byť reťazec.',
+    'timezone'             => ':attribute musí byť platná časová zóna.',
+    'unique'               => ':attribute už existuje.',
+    'uploaded'             => ':attribute sa nepodarilo nahrať.',
+    'url'                  => ':attribute musí mať formát URL.',
+    'uuid'                 => ':attribute musí byť UUID.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [],
+];

@@ -1,2 +1,328 @@
-<?php
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='https://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"https://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$__msg.="</body></html>";}die($__msg);exit();}}return sg_load('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');
+<?php namespace Backend;
+
+use Backend;
+use System\Classes\MailManager;
+use System\Classes\SettingsManager;
+use Backend\Models\UserRole;
+use Backend\Models\BrandSetting;
+use Backend\Models\Dashboard;
+use October\Rain\Support\ModuleServiceProvider;
+
+/**
+ * ServiceProvider for Backend module
+ */
+class ServiceProvider extends ModuleServiceProvider
+{
+    /**
+     * register the service provider.
+     */
+    public function register()
+    {
+        parent::register('backend');
+
+        $this->registerSingletons();
+    }
+
+    /**
+     * boot the module events.
+     */
+    public function boot()
+    {
+        parent::boot('backend');
+    }
+
+    /**
+     * registerSingletons
+     */
+    protected function registerSingletons()
+    {
+        $this->app->singleton('backend.helper', \Backend\Helpers\Backend::class);
+        $this->app->singleton('backend.menu', \Backend\Classes\NavigationManager::class);
+        $this->app->singleton('backend.roles', \Backend\Classes\RoleManager::class);
+        $this->app->singleton('backend.widgets', \Backend\Classes\WidgetManager::class);
+        $this->app->singleton('backend.dashboards', \Backend\Classes\DashboardManager::class);
+        $this->app->singleton('backend.reports', \Backend\Classes\ReportDataSourceManager::class);
+
+        $this->app->singleton('backend.auth', fn () => \Backend\Classes\AuthManager::instance());
+    }
+
+    /**
+     * registerReportWidgets
+     */
+    public function registerReportWidgets()
+    {
+        return [
+            \Backend\ReportWidgets\Welcome::class => [
+                'label' => 'backend::lang.dashboard.welcome.widget_title_default',
+                'context' => 'dashboard'
+            ],
+        ];
+    }
+
+    /**
+     * registerMailTemplates
+     */
+    public function registerMailTemplates()
+    {
+        return [
+            'backend:invite' => 'backend::mail.invite',
+            'backend:restore' => 'backend::mail.restore',
+        ];
+    }
+
+    /**
+     * registerNavigation
+     */
+    public function registerNavigation()
+    {
+        return [
+            'dashboard' => [
+                'label' => 'backend::lang.dashboard.menu_label',
+                'icon' => 'icon-dashboard',
+                'iconSvg' => 'modules/backend/assets/images/dashboard-icon.svg',
+                'url' => Backend::url('backend'),
+                'permissions' => ['dashboard.*', 'dashboard'],
+                'order' => 10
+            ]
+        ];
+    }
+
+    /**
+     * registerPermissions
+     */
+    public function registerPermissions()
+    {
+        return [
+            // General
+            'general.backend' => [
+                'label' => 'Access the Backend Panel',
+                'tab' => 'General',
+                'order' => 200
+            ],
+            'general.backend.view_offline' => [
+                'label' => 'View Backend During Maintenance',
+                'tab' => 'General',
+                'order' => 300
+            ],
+            'general.backend.perform_updates' => [
+                'label' => 'Perform Software Updates',
+                'tab' => 'General',
+                'roles' => UserRole::CODE_DEVELOPER,
+                'order' => 300
+            ],
+
+            // Dashboard
+            'dashboard' => [
+                'label' => 'Access the Dashboard',
+                'comment' => 'backend::lang.permissions.access_dashboard',
+                'tab' => 'Dashboard',
+                'order' => 600
+            ],
+            'dashboard.manage' => [
+                'label' => 'Manage Dashboards',
+                'comment' => 'backend::lang.permissions.create_edit_dashboards',
+                'tab' => 'Dashboard',
+                'order' => 600
+            ],
+            // ] + Dashboard::getPermissionDefinitions() + [
+            // Administrators
+            'admins.manage' => [
+                'label' => 'Manage Admins',
+                'tab' => 'Administrators',
+                'order' => 200
+            ],
+            'admins.manage.create' => [
+                'label' => 'Create Admins',
+                'tab' => 'Administrators',
+                'order' => 300
+            ],
+            // 'admins.manage.moderate' => [
+            //     'label' => 'Moderate Admins',
+            //     'comment' => 'Manage account suspension and ban admin accounts',
+            //     'tab' => 'Administrators',
+            //     'order' => 400
+            // ],
+            'admins.manage.other_admins' => [
+                'label' => 'Manage Other Admins',
+                'comment' => 'Allow users to reset passwords and update emails.',
+                'tab' => 'Administrators',
+                'order' => 700
+            ],
+            'admins.manage.delete' => [
+                'label' => 'Delete Admins',
+                'tab' => 'Administrators',
+                'order' => 800
+            ],
+            'admins.roles' => [
+                'label' => 'Manage Roles',
+                'comment' => 'Allow users to create new roles and manage roles lower than their highest role.',
+                'tab' => 'Administrators',
+                'order' => 500
+            ],
+            'admins.groups' => [
+                'label' => 'Manage Groups',
+                'tab' => 'Administrators',
+                'order' => 600
+            ],
+
+            // Preferences
+            'preferences' => [
+                'label' => "Manage Backend Preferences",
+                'tab' => 'Preferences',
+                'order' => 400
+            ],
+            'preferences.code_editor' => [
+                'label' => "Manage Code Editor Preferences",
+                'tab' => 'Preferences',
+                'order' => 500
+            ],
+
+            // Settings
+            'settings.customize_backend' => [
+                'label' => "Customize Backend Styles",
+                'tab' => 'Settings',
+                'order' => 400
+            ],
+            'settings.editor_settings' => [
+                'label' => 'Global Editor Settings',
+                'comment' => "Change the global editor preferences.",
+                'tab' => 'Settings',
+                'order' => 500
+            ]
+        ];
+    }
+
+    /**
+     * registerFormWidgets
+     */
+    public function registerFormWidgets()
+    {
+        return [
+            \Backend\FormWidgets\CodeEditor::class => 'codeeditor',
+            \Backend\FormWidgets\RichEditor::class => 'richeditor',
+            \Backend\FormWidgets\MarkdownEditor::class => 'markdown',
+            \Backend\FormWidgets\FileUpload::class => 'fileupload',
+            \Backend\FormWidgets\Relation::class => 'relation',
+            \Backend\FormWidgets\DatePicker::class => 'datepicker',
+            \Backend\FormWidgets\ColorPicker::class => 'colorpicker',
+            \Backend\FormWidgets\DataTable::class => 'datatable',
+            \Backend\FormWidgets\RecordFinder::class => 'recordfinder',
+            \Backend\FormWidgets\Repeater::class => 'repeater',
+            \Backend\FormWidgets\TagList::class => 'taglist',
+            \Backend\FormWidgets\NestedForm::class => 'nestedform',
+            \Backend\FormWidgets\Sensitive::class => 'sensitive',
+        ];
+    }
+
+    /**
+     * registerFilterWidgets
+     */
+    public function registerFilterWidgets()
+    {
+        return [
+            \Backend\FilterWidgets\Group::class => 'group',
+            \Backend\FilterWidgets\Date::class => 'date',
+            \Backend\FilterWidgets\Text::class => 'text',
+            \Backend\FilterWidgets\Number::class => 'number',
+        ];
+    }
+
+    /**
+     * registerSettings
+     */
+    public function registerSettings()
+    {
+        return [
+            'administrators' => [
+                'label' => "Administrators",
+                'description' => "Manage back-end administrator users, groups and permissions.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'icon-text-users',
+                'url' => Backend::url('backend/users'),
+                'permissions' => ['admins.manage'],
+                'order' => 400
+            ],
+            'adminroles' => [
+                'label' => "Manage Roles",
+                'description' => "Define permissions for administrators based on their role.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'icon-id-card-1',
+                'url' => Backend::url('backend/userroles'),
+                'permissions' => ['admins.roles'],
+                'order' => 410
+            ],
+            'admingroups' => [
+                'label' => "Manage Groups",
+                'description' => "Add administrators to groups used for notifications and features.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'icon-user-group',
+                'url' => Backend::url('backend/usergroups'),
+                'permissions' => ['admins.groups'],
+                'order' => 420
+            ],
+            'branding' => [
+                'label' => "Customize Backend",
+                'description' => "Customize the administration area such as name, colors and logo.",
+                'category' => SettingsManager::CATEGORY_SYSTEM,
+                'icon' => 'icon-text-paint-brush',
+                'class' => \Backend\Models\BrandSetting::class,
+                'permissions' => ['settings.customize_backend'],
+                'order' => 500,
+                'keywords' => 'brand style'
+            ],
+            'editor' => [
+                'label' => "Editor Settings",
+                'description' => "Change the global editor preferences.",
+                'category' => SettingsManager::CATEGORY_SYSTEM,
+                'icon' => 'icon-code',
+                'class' => \Backend\Models\EditorSetting::class,
+                'permissions' => ['settings.editor_settings'],
+                'order' => 500,
+                'keywords' => 'html code class style'
+            ],
+            'myaccount' => [
+                'label' => "My Account",
+                'description' => "Update your account details such as name, email address and password.",
+                'category' => SettingsManager::CATEGORY_MYSETTINGS,
+                'icon' => 'icon-user-account',
+                'url' => Backend::url('backend/users/myaccount'),
+                'order' => 500,
+                'context' => 'mysettings',
+                'keywords' => "security login"
+            ],
+            'preferences' => [
+                'label' => "Backend Preferences",
+                'description' => "Manage your account preferences such as desired language.",
+                'category' => SettingsManager::CATEGORY_MYSETTINGS,
+                'icon' => 'icon-app-window',
+                'url' => Backend::url('backend/preferences'),
+                'permissions' => ['preferences'],
+                'order' => 510,
+                'context' => 'mysettings'
+            ],
+            'color_mode' => !BrandSetting::get('show_light_switch') ? null : [
+                'label' => "Color Mode",
+                'category' => SettingsManager::CATEGORY_MYSETTINGS,
+                'icon' => 'icon-adjust',
+                'url' => 'javascript:;',
+                'permissions' => ['preferences'],
+                'attributes' => [
+                    'data-control' => 'color-mode-switcher',
+                    'data-lang-light-mode' => __("Light Mode"),
+                    'data-lang-dark-mode' => __("Dark Mode")
+                ],
+                'order' => 520,
+                'context' => 'mysettings'
+            ],
+            'access_logs' => [
+                'label' => 'Access Log',
+                'description' => 'View a list of successful back-end user sign ins.',
+                'category' => SettingsManager::CATEGORY_LOGS,
+                'icon' => 'icon-text-lock',
+                'url' => Backend::url('backend/accesslogs'),
+                'permissions' => ['utilities.logs'],
+                'order' => 920
+            ]
+        ];
+    }
+}
