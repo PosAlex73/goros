@@ -2,10 +2,10 @@
     Template Name: Jyotish
     Author: webstrot
 ---------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. BODY
 	2. CUSTOM CSS / A
 	3. PRELOADER
@@ -491,7 +491,7 @@ ul{
   transition: transform .4s;
   transform: translateY(-300%);
   float: left;
-  width: 100%;	
+  width: 100%;
   font-size: 16px;
   line-height: 23px;
   background: #170135;
@@ -500,23 +500,23 @@ ul{
   padding-left: 20px;
   text-align: left;
 }
-.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
     color: #fff;
     background-color: #75429c;
 }
-.dropdown-menu a:before, 
+.dropdown-menu a:before,
 .dropdown-menu a:after{
 	display:none;
 }
 .dropdown:hover .dropdown-menu{
-  max-height: 500px;  
+  max-height: 500px;
   opacity: 1;
   z-index: 1000;
   background: #170135;
 }
 .dropdown:hover > .dropdown-menu > li > a {
-  transform: translateY(0%); 
+  transform: translateY(0%);
 }
 
 /*-- hs Navigation right Start --*/
@@ -649,7 +649,7 @@ ul{
 .hs_top_user_profile .signin_dropdown .formsix-e{
 	position: relative;
 }
-.hs_top_user_profile .signin_dropdown .form-group.i-password:after, 
+.hs_top_user_profile .signin_dropdown .form-group.i-password:after,
 .hs_top_user_profile .signin_dropdown .form-group.i-email:after{
     position: absolute;
     top: 0;
@@ -737,7 +737,7 @@ ul{
 .hs_navi_searchbar_wrapper input::placeholder {
     color: rgba(255, 255, 255, 0.7686274509803922);
 }
-.hs_navi_searchbar_wrapper input:-ms-input-placeholder { 
+.hs_navi_searchbar_wrapper input:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.7686274509803922);
 }
 
@@ -1005,7 +1005,7 @@ ul{
 .cd-dropdown-content li a:hover {
     background:#542875;
 }
-.cd-dropdown-content a, 
+.cd-dropdown-content a,
 .cd-dropdown-content ul a {
 	border: 1px solid rgba(235, 235, 235, 0.2);
 }
@@ -1022,7 +1022,7 @@ ul{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url(../images/header/slide1.jpg) 50% 0 repeat-y;
+  background: url(../images/header/slide1.webp) 50% 0 repeat-y;
   position: relative;
   min-height:900px;
 }
@@ -1032,7 +1032,7 @@ ul{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url(../images/header/slide2.jpg);
+  background: url(../images/header/slide2.webp);
   position: relative;
   min-height:900px;
 }
@@ -1042,7 +1042,7 @@ width:100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url(../images/header/slide3.jpg);
+  background: url(../images/header/slide3.webp);
   position: relative;
   min-height:900px;
 }
@@ -1091,7 +1091,7 @@ width:100%;
 }
 .slider-area .carousel-inner .item .carousel-captions .content h2 span {
   font-weight: bold;
-  
+
 }
 .slider-area .carousel-inner .item .carousel-captions .content p {
   font-size: 16px;
@@ -1155,7 +1155,7 @@ width:100%;
 	position:absolute;
 	top:50%;
 	float:left;
-	width:100%;	
+	width:100%;
 }
 .carousel-nevigation > .prev{
 	top:75px;
@@ -1323,7 +1323,7 @@ width:100%;
 	padding-right: 20px;
 }
 .slider_bottom_tab{
-	padding-top:50px;	
+	padding-top:50px;
 }
 .slider-area .carousel-inner .item .carousel-captions .content_tabs .hs_slider_tabs_icon_cont_wrapper li .hs_tabs_btn{
 	float:left;
@@ -1495,7 +1495,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_sign_box:hover h2, 
+.hs_sign_box:hover h2,
 .hs_sign_box:hover p {
     color: #fff;
 	-webkit-transition: all 0.5s;
@@ -1691,7 +1691,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_news_slider_wrapper  .owl-theme .owl-dots .owl-dot.active span, 
+.hs_news_slider_wrapper  .owl-theme .owl-dots .owl-dot.active span,
 .hs_news_slider_wrapper  .owl-theme .owl-dots .owl-dot:hover span {
 	background:#75429c;
 	width: 25px;
@@ -1750,7 +1750,7 @@ width:100%;
 	display:none;
 }
 .hs_about_indx_main_wrapper .hs_about_heading_wrapper h4 span:after {
-	 width: 40px; 
+	 width: 40px;
 }
 .hs_about_heading_main_wrapper{
 	float:left;
@@ -2529,7 +2529,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_team_slider_wrapper .owl-theme .owl-nav .owl-prev:hover, 
+.hs_team_slider_wrapper .owl-theme .owl-nav .owl-prev:hover,
 .hs_team_slider_wrapper .owl-theme .owl-nav .owl-next:hover {
     background: #ff7e00;
     color: #ffffff;
@@ -2661,7 +2661,7 @@ width:100%;
 }
 .hs_lest_news_img_wrapper img{
 	width:100%;
-}	
+}
 .hs_lest_news_img_wrapper li{
     float: left;
     width: 130px;
@@ -2799,8 +2799,8 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_lest_news_box_wrapper:hover .hs_lest_news_cont_wrapper h5, 
-.hs_lest_news_box_wrapper:hover .hs_lest_news_cont_wrapper h4 a, 
+.hs_lest_news_box_wrapper:hover .hs_lest_news_cont_wrapper h5,
+.hs_lest_news_box_wrapper:hover .hs_lest_news_cont_wrapper h4 a,
 .hs_lest_news_box_wrapper:hover .hs_lest_news_cont_wrapper h4 a i{
 	color:#ee8722;
 	-webkit-transition: all 0.5s;
@@ -2809,8 +2809,8 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_blog_box1_main_wrapper:hover .hs_blog_cont_heading_wrapper  h2, 
-.hs_blog_box1_main_wrapper:hover .hs_blog_cont_heading_wrapper h5 a, 
+.hs_blog_box1_main_wrapper:hover .hs_blog_cont_heading_wrapper  h2,
+.hs_blog_box1_main_wrapper:hover .hs_blog_cont_heading_wrapper h5 a,
 .hs_blog_box1_main_wrapper:hover .hs_blog_cont_heading_wrapper h5 a i{
 	color:#ee8722;
 	-webkit-transition: all 0.5s;
@@ -3265,7 +3265,7 @@ width:100%;
 	border-radius: 0;
 	margin: 0;
 }
-.hs_about_progress_cont_left .accordionFifteen .panel .panel-heading a {	
+.hs_about_progress_cont_left .accordionFifteen .panel .panel-heading a {
 	display: block;
 	background: #75429c;
 	padding: 15px 20px;
@@ -3321,9 +3321,9 @@ width:100%;
 	line-height: 24px;
 	text-align: center;
 	display: block;
-	border-radius: 50%;	
+	border-radius: 50%;
 }
-.hs_about_progress_cont_left .accordionFifteen .panel .panel-heading a:after {  
+.hs_about_progress_cont_left .accordionFifteen .panel .panel-heading a:after {
   content: "\2212";
     background: transparent;
     border-radius: 2px;
@@ -3661,8 +3661,8 @@ width:100%;
 	border:1px solid #75429c;
 	padding:20px 20px 20px 35px;
 }
-.hs_kd_six_sec_input_wrapper.i-name:after, 
-.hs_kd_six_sec_input_wrapper.i-email:after, 
+.hs_kd_six_sec_input_wrapper.i-name:after,
+.hs_kd_six_sec_input_wrapper.i-email:after,
 .hs_kd_six_sec_input_wrapper.i-message:after {
     position: absolute;
     top: 13px;
@@ -3676,7 +3676,7 @@ width:100%;
 }
 .hs_kd_six_sec_input_wrapper.i-email:after {
 	content: "\f003";
-    left: 14px;	
+    left: 14px;
 }
 .hs_kd_six_sec_input_wrapper.i-message:after {
 	content: "\f0e5";
@@ -3868,7 +3868,7 @@ width:100%;
 	border-radius: 0;
 	margin: 0;
 }
-.hs_kd_right_accordi_sec_wrapper .accordionFifteen .panel .panel-heading a {	
+.hs_kd_right_accordi_sec_wrapper .accordionFifteen .panel .panel-heading a {
 	display: block;
 	background: #222222;
 	padding: 15px 20px;
@@ -3925,9 +3925,9 @@ width:100%;
 	line-height: 24px;
 	text-align: center;
 	display: block;
-	border-radius: 50%;	
+	border-radius: 50%;
 }
-.hs_kd_right_accordi_sec_wrapper .accordionFifteen .panel .panel-heading a:after {  
+.hs_kd_right_accordi_sec_wrapper .accordionFifteen .panel .panel-heading a:after {
   content: "\2212";
     background: transparent;
     border-radius: 2px;
@@ -5205,7 +5205,7 @@ width:100%;
 .author_detail .publish_date{
 	font-size: 14px;
 }
-.author_content{ 
+.author_content{
     padding-bottom:10px;
 }
 .text_wrapper h5 a {
@@ -5784,10 +5784,10 @@ width:100%;
 	background:#542875;
 	color:#ffffff;
 	z-index:10;
-}	
-.pagination > li > a:hover, 
-.pagination > li > span:hover, 
-.pagination > li > a:focus, 
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
 .pagination > li > span:focus {
     z-index: 2;
     color: #fff;
@@ -5917,7 +5917,7 @@ width:100%;
 	position: relative;
     box-shadow: inset 0 0 0 5px #542875;
 }
-.hs_contact_title_box_wrapper .inner_wrapper:before, 
+.hs_contact_title_box_wrapper .inner_wrapper:before,
 .hs_contact_title_box_wrapper .inner_wrapper:after {
     position: absolute;
     width: 0;
@@ -6406,7 +6406,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_shop_single_slider_wrapper .owl-theme .owl-nav .owl-prev:hover, 
+.hs_shop_single_slider_wrapper .owl-theme .owl-nav .owl-prev:hover,
 .hs_shop_single_slider_wrapper .owl-theme .owl-nav .owl-next:hover {
     background: #ff7e00;
     color: #ffffff;
@@ -6542,7 +6542,7 @@ width:100%;
 }
 .hs_shop_single_right_heading_wrapper h2{
 	font-family: 'Lato', sans-serif;
-	font-size: 24px;	
+	font-size: 24px;
 	color:#fff;
 }
 .hs_shop_single_price_wrapper{
@@ -6720,8 +6720,8 @@ width:100%;
 	position: relative;
     float: left;
     padding-right: 25px;
-}	
-.hs_shop_single_quantily_info input {    
+}
+.hs_shop_single_quantily_info input {
 	float:left;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 0;
@@ -6732,7 +6732,7 @@ width:100%;
     text-align: center;
     width: 50px;
     padding: 5px 10px;
-    outline: none; 
+    outline: none;
 	box-shadow:none;
 	background: transparent;
 }
@@ -6753,7 +6753,7 @@ width:100%;
 }
 .increase {
     top: 0;
-    right: 0;	
+    right: 0;
 	border-radius: 0;
     border-top-right-radius: 4px;
 }
@@ -6811,14 +6811,14 @@ width:100%;
     padding: 11px 29px;
 }
 .product_tab_section .nav>li>a:active,
-.product_tab_section .nav>li>a:focus, 
+.product_tab_section .nav>li>a:focus,
 .product_tab_section .nav>li>a:hover{
     background-color: #75429c;
     color: #fff;
     border-color: #75429c;
 }
-.product_tab_section .nav-tabs>li.active>a, 
-.product_tab_section .nav-tabs>li.active>a:focus, 
+.product_tab_section .nav-tabs>li.active>a,
+.product_tab_section .nav-tabs>li.active>a:focus,
 .product_tab_section .nav-tabs>li.active>a:hover{
 	background-color: #75429c;
     color: #fff;
@@ -6894,7 +6894,7 @@ width:100%;
 	width:100%;
 	padding-bottom:10px;
 }
-								
+
 /*product_tab_section end*/
 
 /**************------ SHOP SINGLE CSS END -------*******************/
@@ -6910,7 +6910,7 @@ width:100%;
 	height:100%;
 	padding-top:100px;
 	padding-bottom:100px;
-	
+
 }
 .hs_sign_heading_wrapper{
 	float:left;
@@ -6976,7 +6976,7 @@ width:100%;
 }
 .hs_sign_left_tabs_wrapper .hs_slider_tabs_icon_cont_wrapper li:last-child{
 	font-size:16px;
-	
+
 }
 .hs_sign_left_tabs_wrapper li .hs_tabs_btn{
 	float:left;
@@ -7872,7 +7872,7 @@ width:100%;
 	padding-bottom: 0px;
 }
 .hs_news_slider_bg_overlay{
-	background: transparent; 
+	background: transparent;
 }
 
 .v-2_about_index{
@@ -7948,10 +7948,10 @@ width:100%;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
-    transition: all 0.5s; 
+    transition: all 0.5s;
 }
 .v-2_counter .hs_counter_cont_wrapper:hover .count-description span{
-	border: 1px solid #fff; 
+	border: 1px solid #fff;
 }
 
 .v-2_service{
@@ -8080,5 +8080,5 @@ width:100%;
 	border-top-right-radius: 8px;
 }
 .hs_astro_team_img_main_wrapper:hover .hs_astro_img_wrapper li{
-	background: #75429c; 
+	background: #75429c;
 }
