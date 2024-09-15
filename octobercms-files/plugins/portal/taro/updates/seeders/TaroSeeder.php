@@ -9,6 +9,6 @@ class TaroSeeder extends Seeder
 {
     public function run()
     {
-        //
+
     }
 }
