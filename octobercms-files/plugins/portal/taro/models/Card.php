@@ -20,4 +20,9 @@ class Card extends Model
      * @var array rules for validation
      */
     public $rules = [];
+
+    public function cardSet()
+    {
+        return $this->belongsTo(CardSet::class);
+    }
 }
