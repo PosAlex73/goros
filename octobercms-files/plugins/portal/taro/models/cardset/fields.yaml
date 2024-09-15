@@ -2,7 +2,37 @@
 #  Form Field Definitions
 # ===================================
 
-fields:
-    id:
-        label: ID
-        disabled: true
+tabs:
+    fields:
+        id:
+            tab: General
+            label: ID
+            disabled: true
+        title:
+            tab: General
+            label: Title
+        status:
+            tab: General
+            label: Status
+            type: dropdown
+            optionsMethod: Portal\Taro\enums\Statuses::getStatuses
+        created_at:
+            tab: General
+            label: Created
+            disabled: true
+        updated_at:
+            tab: General
+            label: Updated
+            disabled: true
+
+        description:
+            tab: Description
+            label: description
+            type: richeditor
+
+        cards:
+            tab: Cards
+            label: Cards
+            type: relation
+            nameFrom: title
+

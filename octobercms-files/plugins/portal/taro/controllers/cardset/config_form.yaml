@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Card Set
+
+# Model Form Field configuration
+form: $/portal/taro/models/cardset/fields.yaml
+
+# Model Class name
+modelClass: Portal\Taro\Models\CardSet
+
+# Default redirect location
+defaultRedirect: portal/taro/cardset
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: portal/taro/cardset/update/:id
+    redirectClose: portal/taro/cardset
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: portal/taro/cardset
+    redirectClose: portal/taro/cardset
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -6,3 +6,16 @@ columns:
     id:
         label: ID
         searchable: false
+    title:
+        label: Title
+        searchable: true
+    status:
+        label: Status
+        searchable: true
+        displayFrom: status_label
+    created_at:
+        label: Created
+        searchable: false
+    updated_at:
+        label: Updated
+        searchable: false

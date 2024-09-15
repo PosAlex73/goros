@@ -1,6 +1,7 @@
 <?php namespace Portal\Taro\Models;
 
 use Model;
+use October\Rain\Database\Traits\Validation;
 
 /**
  * CardSet Model
@@ -9,7 +10,7 @@ use Model;
  */
 class CardSet extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
+    use Validation;
 
     /**
      * @var string table name
@@ -21,8 +22,12 @@ class CardSet extends Model
      */
     public $rules = [];
 
-    public function cards()
+    public $hasMany = [
+        'cards' => [Card::class, 'key' => 'set_id']
+    ];
+
+    public function getStatusLabelAttribute()
     {
-        return $this->hasMany(Card::class);
+        return ucfirst($this->status);
     }
 }

@@ -1,6 +1,7 @@
 <?php namespace Portal\Taro\Models;
 
 use Model;
+use October\Rain\Database\Traits\Validation;
 
 /**
  * Card Model
@@ -9,7 +10,7 @@ use Model;
  */
 class Card extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
+    use Validation;
 
     /**
      * @var string table name

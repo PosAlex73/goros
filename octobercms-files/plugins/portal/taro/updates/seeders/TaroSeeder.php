@@ -1,4 +1,6 @@
-<?php namespace Portal\Taro\Updates\Seeders;
+<?php
+
+namespace Portal\Taro\Updates\Seeders;
 
 use Portal\Taro\enums\Statuses;
 use Portal\Taro\Models\Card;

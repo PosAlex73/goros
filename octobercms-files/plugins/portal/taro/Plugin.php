@@ -71,12 +71,10 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'taro' => [
                 'label' => 'Taro',
-                'url' => Backend::url('portal/taro/mycontroller'),
+                'url' => Backend::url('portal/taro/cardset'),
                 'icon' => 'icon-leaf',
                 'permissions' => ['portal.taro.*'],
                 'order' => 500,
