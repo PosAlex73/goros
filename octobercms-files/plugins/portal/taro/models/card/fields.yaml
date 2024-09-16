@@ -2,7 +2,22 @@
 #  Form Field Definitions
 # ===================================
 
-fields:
-    id:
-        label: ID
-        disabled: true
+tabs:
+    fields:
+        id:
+            label: ID
+            disabled: true
+            tab: General
+        title:
+            label: Title
+            tab: General
+        image_path:
+            label: Image
+            type: fileupload
+            mode: image
+        description:
+            label: Description
+            tab: Description
+            type: richeditor
+
+

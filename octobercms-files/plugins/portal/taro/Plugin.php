@@ -78,7 +78,20 @@ class Plugin extends PluginBase
                 'icon' => 'icon-leaf',
                 'permissions' => ['portal.taro.*'],
                 'order' => 500,
+                'sideMenu' => [
+                    'timelines' => [
+                        'label' => "Card Sets",
+                        'icon' => 'icon-bars',
+                        'url' => Backend::url('portal/taro/cardset'),
+                    ],
+                    'users' => [
+                        'label' => "Cards",
+                        'icon' => 'icon-user',
+                        'url' => Backend::url('portal/taro/card'),
+                    ],
+                ]
             ],
+
         ];
     }
 }

@@ -26,4 +26,14 @@ class Card extends Model
     {
         return $this->belongsTo(CardSet::class);
     }
+
+    public function getStatusLabelAttribute()
+    {
+        return ucfirst($this->status);
+    }
+
+    public function getImagePathAttribute()
+    {
+        return $this->image_path;
+    }
 }

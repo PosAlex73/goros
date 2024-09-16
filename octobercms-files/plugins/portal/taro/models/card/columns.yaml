@@ -6,3 +6,15 @@ columns:
     id:
         label: ID
         searchable: true
+    title:
+        label: Title
+        searchable: true
+    image:
+        label: Image
+        type: image
+    status:
+        label: Status
+        searchable: true
+        displayFrom: status_label
+
+
