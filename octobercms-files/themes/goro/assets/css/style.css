@@ -171,7 +171,7 @@ body, html {
   display:block;
 }
 .stars {
-  background:#000 url(../images/content/stars.jpg) repeat top center;
+  background:#000 url(../images/content/stars.webp) repeat top center;
   z-index:0;
 }
 .twinkling{
@@ -3096,7 +3096,7 @@ width:100%;
 /**************-------------------- ABOUT CSS START --------------*******************/
 /*-- hs title wrapper Start --*/
 .hs_indx_title_main_wrapper{
-	background:url('../images/content/advert_bg.jpg') 50% 0 repeat-y;
+	background:url('../images/content/advert_bg.webp') 50% 0 repeat-y;
 	background-position:center 0;
 	background-size:cover;
 	background-repeat:no-repeat;

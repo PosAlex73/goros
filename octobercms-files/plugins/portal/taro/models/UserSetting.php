@@ -1,4 +1,6 @@
-<?php namespace Portal\Taro\Models;
+<?php
+
+namespace Portal\Taro\Models;
 
 use System\Models\SettingModel;
 

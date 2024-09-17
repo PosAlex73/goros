@@ -1,3 +1,12 @@
+##
+==
+use Portal\Taro\Models\UserSetting;
+
+function onStart() {
+    $this['phone_number'] = UserSetting::get('phone_number');
+    $this['address'] = UserSetting::get('address');
+}
+==
 <div class="main_header_wrapper">
     <!-- hs Navigation Start -->
     <div class="hs_navigation_header_wrapper">
@@ -9,7 +18,7 @@
                             <i class="fa fa-home"></i>
                         </div>
                         <div class="hs_header_add_icon_cont">
-                            <p>601 , Ram Nagar Dewas</p>
+                            <p>{{ address }}</p>
                         </div>
                     </div>
                     <div class="hs_header_add_wrapper">
@@ -17,7 +26,7 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="hs_header_add_icon_cont">
-                            <p>+1800-123-123</p>
+                            <p>{{ phone_number }}</p>
                         </div>
                     </div>
                 </div>
@@ -80,26 +89,28 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="signin_dropdown">
-                                        <a href="#" class="btn btn-primary"> <span>Login with Facebook</span> <i class="fa fa-facebook"></i> </a>
-                                        <a href="#" class="btn btn-primary google-plus"> Login  with Google <i class="fa fa-google-plus"></i> </a>
-                                        <h2>or</h2>
+                                        {% if social_login_enabled %}
+                                            <a href="#" class="btn btn-primary"> <span>Зайти через Facebook</span> <i class="fa fa-facebook"></i> </a>
+                                            <a href="#" class="btn btn-primary google-plus">Зайти через Google <i class="fa fa-google-plus"></i> </a>
+                                            <h2>или</h2>
+                                        {% endif %}
                                         <div class="formsix-pos">
                                             <div class="form-group i-email">
-                                                <input type="email" class="form-control" required="" id="emailTen" placeholder="Email Address *">
+                                                <input type="email" class="form-control" required="" id="emailTen" placeholder="Почта *">
                                             </div>
                                         </div>
                                         <div class="formsix-e">
                                             <div class="form-group i-password">
-                                                <input type="password" class="form-control" required="" id="namTen-first" placeholder="Password *">
+                                                <input type="password" class="form-control" required="" id="namTen-first" placeholder="Пароль *">
                                             </div>
                                         </div>
                                         <div class="remember_box">
-                                            <label class="control control--checkbox">Remember me
+                                            <label class="control control--checkbox">Запомнить меня
                                                 <input type="checkbox">
                                                 <span class="control__indicator"></span>
                                             </label>
                                             <a href="#" class="forget_password">
-                                                Forgot Password
+                                                Забыл(а) пароль
                                             </a>
                                         </div>
                                         <div class="hs_effect_btn">
