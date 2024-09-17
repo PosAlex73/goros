@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    phone_number:
+        label: Phone Number
+    address:
+        label: Address
+

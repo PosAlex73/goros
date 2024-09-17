@@ -1,7 +1,9 @@
 <?php namespace Portal\Taro;
 
 use Backend;
+use Portal\Taro\Models\UserSetting;
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
 
 /**
  * Plugin Information File
@@ -92,6 +94,22 @@ class Plugin extends PluginBase
                 ]
             ],
 
+        ];
+    }
+
+    public function registerSettings()
+    {
+        return [
+            'settings' => [
+                'label' => 'Настройки сайта',
+                'description' => 'Общие настройки сайта.',
+                'category' => SettingsManager::CATEGORY_SYSTEM,
+                'icon' => 'icon-cog',
+                'class' => UserSetting::class,
+                'order' => 1,
+                'keywords' => 'security location',
+                'permissions' => ['acme.users.access_settings']
+            ]
         ];
     }
 }

@@ -9,12 +9,11 @@ columns:
     title:
         label: Title
         searchable: true
-    image:
-        label: Image
-        type: image
     status:
         label: Status
         searchable: true
         displayFrom: status_label
-
-
+    created_at:
+        label: Created
+    updated_at:
+        label: Updated
