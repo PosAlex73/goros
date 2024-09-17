@@ -31,9 +31,4 @@ class Card extends Model
     {
         return ucfirst($this->status);
     }
-
-    public function getImagePathAttribute()
-    {
-        return $this->image_path;
-    }
 }

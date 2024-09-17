@@ -11,13 +11,23 @@ tabs:
         title:
             label: Title
             tab: General
-        image_path:
-            label: Image
-            type: fileupload
-            mode: image
+        created_at:
+            label: Created
+            disabled: true
+            tab: General
+        updated_at:
+            label: Updated
+            disabled: true
+            tab: General
         description:
             label: Description
             tab: Description
             type: richeditor
+
+        image_path:
+            label: Image
+            type: mediafinder
+            mode: image
+            tab: Image
 
 
