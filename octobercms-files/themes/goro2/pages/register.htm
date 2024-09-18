@@ -1,7 +1,8 @@
 ##
 url = "/register"
 layout = "register.htm"
-[account]
+[registration]
+redirect = "/fsdfs"
 ==
 <div class="auth-area">
     <div class="d-flex align-items-center justify-content-center">
@@ -23,11 +24,21 @@ layout = "register.htm"
                     {% flash %}
                         <div class="alert alert-{{ type == 'error' ? 'danger' : type }}">{{ message }}</div>
                     {% endflash %}
-                    <form class="needs-validation" novalidate data-request="onRegister">
+                    <form
+                        class="needs-validation"
+                        novalidate
+                        data-request="onRegister"
+                        data-request-redirect="/"
+                    >
                         <div class="mb-3 position-relative">
                             <label class="form-label fw-bold">Имя</label>
-                            <input type="text" class="form-control form-control-lg theme-border-radius" name="name" id="authInputEmail"
+                            <input type="text" class="form-control form-control-lg theme-border-radius" name="first_name" id="authInputEmail"
                                    placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label class="form-label fw-bold">Фамилия</label>
+                            <input type="text" class="form-control form-control-lg theme-border-radius" name="last_name" id="authInputEmail"
+                                   placeholder="Введите вашу фамилию" required>
                         </div>
                         <div class="mb-3 position-relative">
                             <label class="form-label fw-bold">Почта</label>
