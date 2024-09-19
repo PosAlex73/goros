@@ -2,7 +2,6 @@
 url = "/register"
 layout = "register.htm"
 [registration]
-redirect = "/fsdfs"
 ==
 <div class="auth-area">
     <div class="d-flex align-items-center justify-content-center">
@@ -53,7 +52,7 @@ redirect = "/fsdfs"
                         <div class="custom-button">
                             <button type="submit" class="rounded-pill btn custom-btn-primary font-small primary-btn-effect">Зарегистрироваться</button>
                             <span class="small ps-3">
-                  Уже есть аккаунт?<a href="login.html" class="ps-2">Войти</a>
+                  Уже есть аккаунт?<a href="{{ "login"|page }}" class="ps-2">Войти</a>
                 </span>
                         </div>
                     </form>

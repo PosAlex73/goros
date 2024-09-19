@@ -1,3 +1,13 @@
+##
+
+==
+function onStart(){
+    $this['env'] = config('app.env');
+}
+==
+
+{% if env != 'local' %}
 <div class="page-loader">
     <div class="spinner"></div>
 </div>
+{% endif %}

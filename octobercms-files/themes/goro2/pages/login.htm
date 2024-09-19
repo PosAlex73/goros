@@ -1,6 +1,54 @@
 ##
-url = "/register"
+url = "/login"
 layout = "register.htm"
-[registration]
+[authentication]
 redirect = "/fsdfs"
 ==
+<div class="auth-area">
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="align-self-center p-4 me-0 me-lg-5">
+            <div class="p-0">
+                <div class="d-flex align-items-center mb-5">
+                    <div class="flex-shrink-0">
+                        <div class="theme-bg-accent-two p-3 rounded-circle">
+                            <i class="bi bi-unlock lh-1 fs-4"></i>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <span class="fs-4 fw-bold">Войти в личный кабинет</span>
+                        <p class="font-medium mb-0 theme-text-accent-one">Войти с помощью email
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    {% flash %}
+                        <div class="alert alert-{{ type == 'error' ? 'danger' : type }}">{{ message }}</div>
+                    {% endflash %}
+                    <form
+                        class="needs-validation"
+                        novalidate
+                        data-request="onLogin"
+                        data-request-redirect="/"
+                    >
+                        <div class="mb-3 position-relative">
+                            <label class="form-label fw-bold">Почта</label>
+                            <input type="text" class="form-control form-control-lg theme-border-radius" name="email" id="authInputEmail"
+                                   placeholder="Введите вашу почту" required>
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label class="form-label fw-bold">Пароль</label>
+                            <input type="password" class="form-control form-control-lg theme-border-radius" name="password" id="authInputPassword1"
+                                   placeholder="Введите пароль" required>
+                        </div>
+                        <div class="custom-button">
+                            <button type="submit" class="rounded-pill btn custom-btn-primary font-small primary-btn-effect">Войти</button>
+                            <span class="small ps-3">
+                  Нет аккаунта?<a href="{{ "register"|page }}" class="ps-2">Зарегистрироваться</a>
+                </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
